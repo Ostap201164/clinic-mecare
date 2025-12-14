@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/clinic-mecare/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.ts",
+    "format": "prettier --write 'src/**/*.{js,ts,scss,css,html,json,md}'"
   },
   "devDependencies": {
     "dotenv": "^17.2.3",
