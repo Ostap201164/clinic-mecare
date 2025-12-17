@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-medical-logo" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M12.873 24.666c-0.045 0-0.045 0-0.045 0-0.453 0-0.816-0.317-0.907-0.725l-3.218-12.374-0.997 4.578c-0.136 0.453-0.499 0.771-0.997 0.771h-5.711c-0.544 0-0.997-0.453-0.997-0.997s0.453-0.997 0.997-0.997h4.941l1.722-7.751c0.091-0.453 0.453-0.771 0.907-0.771s0.861 0.317 0.997 0.725l3.354 12.963 1.677-5.303c0.136-0.408 0.499-0.68 0.952-0.68h3.626c0.408 0 0.771 0.227 0.907 0.589l0.77 1.858 1.677-8.295c0.091-0.453 0.453-0.771 0.906-0.816 0.453 0 0.861 0.317 0.997 0.771l1.496 5.62h5.076c0.544 0 0.997 0.453 0.997 0.997s-0.453 0.952-0.997 0.952h-5.847c-0.453 0-0.861-0.272-0.952-0.725l-0.589-2.221-1.45 7.252c-0.091 0.408-0.453 0.725-0.861 0.77-0.453 0.045-0.861-0.181-0.997-0.589l-1.768-4.215h-2.266l-2.493 7.932c-0.136 0.408-0.499 0.68-0.906 0.68z"></path>
+</symbol>
+<symbol id="icon-burger" viewBox="0 0 43 32">
+<path fill="none" stroke="#67666b" style="stroke: var(--color2, #67666b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M2.667 29.333h35.555"></path>
+<path fill="none" stroke="#67666b" style="stroke: var(--color2, #67666b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M2.667 16h35.555"></path>
+<path fill="none" stroke="#67666b" style="stroke: var(--color2, #67666b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M2.667 2.667h35.555"></path>
+</symbol>
+</defs>
+</svg>
