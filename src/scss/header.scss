@@ -1,47 +1,98 @@
 .header {
-    padding-top: 16px;
+  padding-top: 16px;
   &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 327px;
+    margin: 0 auto;
   }
 
   &__logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    gap: 8px;
+align-items: center;
+gap: 6px;
+width: 104px;
+height: 30px;
   }
 
   &__logo-svg {
-    border-radius: 8.889px;
-border: 1.111px solid #FAFFFE;
+    height: 23px;
+    width: 23px;
+    border-radius: 6.667px;
+border: 0.833px solid #FAFFFE;
 background: var(--Primary-500, #5ABEAF);
-box-shadow: 0 1.111px 4.444px 0 rgba(255, 255, 255, 0.35) inset, 1.111px -4.444px 4.444px 0 rgba(255, 255, 255, 0.20) inset;
+box-shadow: 0 0.833px 3.333px 0 rgba(255, 255, 255, 0.35) inset, 0.833px -3.333px 3.333px 0 rgba(255, 255, 255, 0.20) inset;
+display: flex;
+padding: 3.75px;
+justify-content: center;
+align-items: center;
+gap: 3.333px;
   }
 
   &__logo-name {
-    color: var(--Neutrals-800, #181B39);
-text-align: center;
-font-family: "Sequel Sans";
-font-size: 24px;
-font-weight: 325;
-line-height: 1.4;
+    color: var(--Neutrals-800, #181b39);
+    text-align: center;
+    font-family: "Sequel Sans";
+    font-size: 18px;
+    font-weight: 320;
+    line-height: 140%; /* 25.2px */
+  }
+
+  &__nav {
+    display: none;
+    &__item {
+      color: var(--Neutrals-900, #0d1525);
+      text-align: center;
+      font-family: "Sequel Sans";
+      font-size: 16px;
+      font-weight: 315;
+      line-height: 1.4;
+    }
   }
 
   &__links {
-    display: flex;
+    display: none;
   }
 
-  &__link {
+  &__link-join {
+    color: var(--Secondary-400, #1c404c);
+    text-align: center;
+    padding: 4px 8px;
+    color: var(--Secondary-400, #1c404c);
+    text-align: center;
+    font-family: "Sequel Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 315;
+    line-height: 140%;
   }
 
-  &__burger-img {
+  &__link-get {
+    color: var(--Base-White, #fff);
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid var(--BG-BG-1, #f2f5f7);
+    background: var(--Primary-500, #5abeaf);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01),
+      0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    /* Large Body/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    padding: 12px 20px;
+  }
+
+  &__burger-svg {
+border-radius: 6px;
+border: 1px solid var(--BG-BG-3, #E3E3E9);
+background: var(--Greyscale-0, #FFF);
+box-shadow: 0.8px 1.6px 3.2px 0 rgba(13, 13, 18, 0.08);
+display: flex;
+width: 23px;
+height: 22px;
+padding: 5px 3.332px 5px 3.334px;
   }
 }
-
-.nav {
-    
-  &__item {
-  }
-}
-
