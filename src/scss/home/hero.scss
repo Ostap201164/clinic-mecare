@@ -1,14 +1,8 @@
-.hero {
-  &__main {
-    display: flex;
-  }
-
-  &__cards {
-    display: grid;
-    color: black;
-  }
-
-  &__card {
-    border-radius: 16px;
-  }
+.hero{
+    &__container{
+        margin: 0 auto;
+        width: 327px;
+        display: grid;
+    }
+    
 }
