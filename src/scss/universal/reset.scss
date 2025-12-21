@@ -31,7 +31,7 @@ aside {
 
 html,
 body {
-    background: #121517;
+    background: #FFF;
     height: 100%;
     width: 100%;
     line-height: 1;
@@ -40,15 +40,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-[class*="__container"] {
-    @include adaptive-value(width, 379, 512);
-    margin: 0 auto;
-
-    @media (min-width: 1512px) {
-        width: 1253px;
-
-    }
-}
 
 input,
 button,
