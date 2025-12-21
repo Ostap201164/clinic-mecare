@@ -1,0 +1,13 @@
+.hero {
+  &__main {
+    display: flex;
+  }
+
+  &__cards {
+    display: grid;
+  }
+
+  &__card {
+    border-radius: 16px;
+  }
+}
