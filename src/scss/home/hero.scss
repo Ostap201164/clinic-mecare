@@ -94,7 +94,6 @@
     position: relative;
     // overflow: hidden;
 
-
     // display: grid;
     // grid-template-columns: 1fr auto;
     // grid-template-areas:
@@ -102,7 +101,6 @@
     //   "features image"
     //   "text image"
     //   "button image";
-
   }
 
   &__main-svg {
@@ -154,32 +152,33 @@
   }
 
   &__main-text {
-color: var(--Neutrals-800, #181B39);
-font-family: Inter;
-font-size: 10px;
-line-height: 1.4; 
-width: 155px;
-height: 56px;
-position: relative;
-top: -170px;
+    color: var(--Neutrals-800, #181b39);
+    font-family: Inter;
+    font-size: 10px;
+    line-height: 1.4;
+    width: 155px;
+    height: 56px;
+    position: relative;
+    top: -170px;
   }
 
   &__main-btn {
-    color: #FFF;
-font-family: Inter;
-font-size: 12px;
-font-weight: 500;
-display: inline-flex;
-padding: 5px 9px;
-align-items: center;
-gap: 4px;
-border-radius: 30px;
-background: var(--Primary-500, #5ABEAF);
-position: relative;
-top: -150px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    padding: 5px 9px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 30px;
+    background: var(--Primary-500, #5abeaf);
+    position: relative;
+    top: -150px;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
-
-
 
   &__cards {
     display: grid;
