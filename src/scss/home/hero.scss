@@ -1,8 +1,214 @@
-.hero{
-    &__container{
-        margin: 0 auto;
-        width: 327px;
-        display: grid;
-    }
-    
+// .hero {
+//   &__container {
+//     margin: 0 auto;
+//     width: 327px;
+//     display: grid;
+//   }
+//   &__main-card {
+//     padding: 24px 13px 13px 13px;
+//     width: 327px;
+//     height: 211px;
+//     border-radius: 10px;
+//     background: linear-gradient(221deg, #64d3c2 0%, #f0f4da 111.43%);
+//     position: absolute;
+//   }
+//   &__main-svg {
+//     width: 300.884px;
+//     height: 19.956px;
+//     margin-bottom: 16px;
+//   }
+//   &__features {
+//     display: flex;
+//     gap: 20px;
+//     margin-bottom: 24px;
+//   }
+//   &__feature {
+//     display: flex;
+//     align-items: center;
+//     gap: 3px;
+//   }
+//   &__feature-svg-blood {
+//     width: 17.043px;
+//     height: 17.043px;
+//     padding: 2.435px 2.029px;
+//     border-radius: 8.522px;
+//     background: var(--Base-White, #fff);
+//   }
+//   &__feature-svg-pills {
+//     width: 16.356px;
+//     height: 16.356px;
+//     padding: 2.337px 1.947px;
+//     border-radius: 8.178px;
+//     background: var(--Base-White, #fff);
+//   }
+//   &__feature-text {
+//     color: var(--Neutrals-800, #181b39);
+//     font-family: Inter;
+//     font-size: 10px;
+//     font-weight: 500;
+//   }
+//   &__main-image-doctor {
+//     position: relative;
+//     width: 164px;
+//     height: 164px;
+//     left: 200px;
+//     top: -17px;
+//   }
+//   &__main-text {
+
+//   }
+//   &__main-btn {
+//     color: #fff;
+//     padding: 5px 9px;
+//     border-radius: 30px;
+//     background: var(--Primary-500, #5abeaf);
+//     font-family: Inter;
+//     font-size: 12px;
+//     font-weight: 500;
+//   }
+//   &__cards {
+//   }
+//   &__card {
+//   }
+//   &__card-div-titel {
+//   }
+//   &__card-text {
+//   }
+//   &__card-link {
+//   }
+// }
+.hero {
+  &__container {
+    margin: 0 auto;
+    width: 327px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  &__main-card {
+    padding: 24px 13px 13px;
+    width: 327px;
+    height: 211px;
+    border-radius: 10px;
+    background: linear-gradient(221deg, #64d3c2 0%, #f0f4da 111.43%);
+    position: relative;
+    // overflow: hidden;
+
+
+    // display: grid;
+    // grid-template-columns: 1fr auto;
+    // grid-template-areas:
+    //   "title title"
+    //   "features image"
+    //   "text image"
+    //   "button image";
+
+  }
+
+  &__main-svg {
+    width: 300.884px;
+    height: 19.956px;
+    margin-bottom: 16px;
+  }
+
+  &__features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__feature-svg-blood {
+    width: 17.043px;
+    height: 17.043px;
+    padding: 2.435px 2.029px;
+    border-radius: 8.522px;
+    background: var(--Base-White, #fff);
+  }
+
+  &__feature-svg-pills {
+    width: 16.356px;
+    height: 16.356px;
+    padding: 2.337px 1.947px;
+    border-radius: 8.178px;
+    background: var(--Base-White, #fff);
+  }
+
+  &__feature-text {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  &__main-image-doctor {
+    position: relative;
+    width: 164px;
+    height: 164px;
+    left: 200px;
+    top: -17px;
+  }
+
+  &__main-text {
+color: var(--Neutrals-800, #181B39);
+font-family: Inter;
+font-size: 10px;
+line-height: 1.4; 
+width: 155px;
+height: 56px;
+position: relative;
+top: -170px;
+  }
+
+  &__main-btn {
+    color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+display: inline-flex;
+padding: 5px 9px;
+align-items: center;
+gap: 4px;
+border-radius: 30px;
+background: var(--Primary-500, #5ABEAF);
+position: relative;
+top: -150px;
+  }
+
+
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  &__card {
+    padding: 16px;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 12px;
+  }
+
+  &__card-div-titel {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  &__card-text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  &__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+  }
 }
