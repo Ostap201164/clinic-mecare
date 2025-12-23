@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "dotenv": "^17.2.3",
+    "prettier": "^3.7.4",
     "vite": "^7.0.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
