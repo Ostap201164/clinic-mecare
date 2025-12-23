@@ -124,11 +124,11 @@
     row-gap: 20px;
   }
   &__card {
+    border-radius: 16px;
   }
 
   &__card--green {
     padding: 20px 9px 20px 8px;
-    border-radius: 16px;
     background: linear-gradient(180deg, #6ad4c3 42.63%, #dcefd6 155.06%);
   }
   &__card-title {
@@ -172,26 +172,104 @@
   &__card--image-top {
     width: 327px;
     height: 226.284px;
-    border-radius: 16px;
     background: url(../image/home-image/analytics/analytics-grany.jpg) lightgray
       50% / cover no-repeat;
   }
   &__card--image-bottom-first {
     width: 327px;
     height: 317.815px;
-    border-radius: 16px;
     background: url(../image/home-image/analytics/analytics-instrument.jpg)
       lightgray 50% / cover no-repeat;
   }
   &__card--blue {
-    border-radius: 16px;
     background: var(--BG-BG-4, #007ecd);
     padding: 20px 9px 20px 8px;
   }
   &__card--image-bottom-second {
     width: 327px;
     height: 317.815px;
-    border-radius: 16px;
-    background: url(../image/home-image/analytics/analytics-hand.jpg) lightgray 50% / cover no-repeat;
+    background: url(../image/home-image/analytics/analytics-hand.jpg) lightgray
+      50% / cover no-repeat;
+  }
+}
+
+@media (min-width: 1024px) {
+  .analytics {
+    &__container {
+      width: 928px;
+    }
+    &__header {
+    }
+    &__title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 120%;
+    }
+    &__grid {
+      display: grid;
+      // grid-template-columns: 520px 390px 270px;
+      // grid-template-rows: 253px 258px;
+      gap: 16px;
+      grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    }
+    &__card {
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    &__card--green {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding: 24px 20px;
+    }
+    &__card-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    &__card-text {
+      color: var(--Base-White, #fff);
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      width: 118px;
+      padding: 10px;
+      gap: 4px;
+      border-radius: 24px;
+      font-size: 14px;
+    }
+    &__btn-svg {
+      width: 16.571px;
+      height: 16.571px;
+    }
+    &__card--image-top {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      height: 254px;
+    }
+    &__card--image-bottom-first {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      height: 258px;
+      width: 270px;
+    }
+    &__card--blue {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      padding: 16.399px 12.628px 15.058px 13.258px;
+      width: 354px;
+      justify-self: center;
+    }
+    &__card--image-bottom-second {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      height: 258px;
+    }
   }
 }
