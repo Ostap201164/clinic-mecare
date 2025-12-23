@@ -207,13 +207,9 @@
     }
     &__grid {
       display: grid;
-      // grid-template-columns: 520px 390px 270px;
-      // grid-template-rows: 253px 258px;
+      grid-template-columns: 520px 390px 270px;
+      grid-template-rows: 253px 258px;
       gap: 16px;
-      grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
     }
     &__card {
       border-radius: 14px;
