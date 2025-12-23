@@ -99,39 +99,99 @@
     margin: 0 auto;
   }
   &__header {
+    margin-bottom: 59px;
   }
   &__title {
     color: var(--Neutrals-900, #0d1525);
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
     margin-bottom: 24px;
   }
   &__subtitle {
-    color: var(--Neutrals-800, #181B39);
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; 
+    color: var(--Neutrals-800, #181b39);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
   }
   &__grid {
+    display: grid;
+    row-gap: 20px;
   }
   &__card {
   }
+
   &__card--green {
+    padding: 20px 9px 20px 8px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #6ad4c3 42.63%, #dcefd6 155.06%);
   }
+  &__card-title {
+    color: var(--Base-White, #fff);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+  &__card-text {
+    color: var(--Base-White, #fff);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
   &__btn {
+    width: 143px;
+    display: flex;
+    padding: 13px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 30px;
+    border: 1px solid var(--Neutrals-200, #efefef);
+    background: var(--Base-White, #fff);
+    color: var(--Neutrals-900, #0d1525);
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
   }
   &__btn-svg {
+    width: 20px;
+    height: 20px;
   }
   &__card--image-top {
+    width: 327px;
+    height: 226.284px;
+    border-radius: 16px;
+    background: url(../image/home-image/analytics/analytics-grany.jpg) lightgray
+      50% / cover no-repeat;
   }
-  &__card--image-small {
+  &__card--image-bottom-first {
+    width: 327px;
+    height: 317.815px;
+    border-radius: 16px;
+    background: url(../image/home-image/analytics/analytics-instrument.jpg)
+      lightgray 50% / cover no-repeat;
   }
   &__card--blue {
+    border-radius: 16px;
+    background: var(--BG-BG-4, #007ecd);
+    padding: 20px 9px 20px 8px;
+  }
+  &__card--image-bottom-second {
+    width: 327px;
+    height: 317.815px;
+    border-radius: 16px;
+    background: url(../image/home-image/analytics/analytics-hand.jpg) lightgray 50% / cover no-repeat;
   }
 }
