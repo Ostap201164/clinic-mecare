@@ -1,0 +1,194 @@
+.header {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(50px);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 327px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 104px;
+    height: 30px;
+        cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__logo-svg {
+    height: 23px;
+    width: 23px;
+    border-radius: 6.667px;
+    border: 0.833px solid #fafffe;
+    background: var(--Primary-500, #5abeaf);
+    box-shadow: 0 0.833px 3.333px 0 rgba(255, 255, 255, 0.35) inset,
+      0.833px -3.333px 3.333px 0 rgba(255, 255, 255, 0.2) inset;
+    padding: 3.75px;
+  }
+
+  &__logo-name {
+    color: var(--Neutrals-800, #181b39);
+    text-align: center;
+    font-family: "Sequel Sans";
+    font-size: 18px;
+  }
+
+  &__links {
+    display: none;
+    button {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__link-join {
+    color: var(--Secondary-400, #1c404c);
+    text-align: center;
+    font-family: "Sequel Sans";
+    font-weight: 315;
+    padding: 4px 8px;
+
+  }
+
+  &__link-get {
+    color: var(--Base-White, #fff);
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid var(--BG-BG-1, #f2f5f7);
+    background: var(--Primary-500, #5abeaf);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01),
+      0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 12px 20px;
+  }
+
+  &__btn-burger{
+          cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+  }
+  &__burger-svg {
+    border-radius: 6px;
+    border: 1px solid var(--BG-BG-3, #e3e3e9);
+    background: var(--Greyscale-0, #fff);
+    box-shadow: 0.8px 1.6px 3.2px 0 rgba(13, 13, 18, 0.08);
+    display: flex;
+    width: 23px;
+    height: 22px;
+    padding: 5px 3.332px 5px 3.334px;
+  }
+}
+
+.nav {
+  display: none;
+  &__item {
+    color: var(--Neutrals-800, #181b39);
+    text-align: center;
+    font-family: "Sequel Sans";
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    &__container {
+      width: 928px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      gap: 8px;
+      width: 140px;
+      height: 40px;
+    }
+
+    &__logo-svg {
+      height: 33px;
+      width: 33px;
+      padding: 5px;
+    }
+
+    &__logo-name {
+      font-size: 24px;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+    &__btn-burger{
+      display: none;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__container {
+      width: 1120px;
+      margin: 0 auto;
+    }
+
+    &__links {
+      gap: 30px;
+    }
+
+    &__link-get {
+      font-weight: 500;
+    }
+  }
+  .nav {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    &__container {
+      width: 1280px;
+    }
+    &__logo-name {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .header {
+    &__container {
+      width: 1392px;
+    }
+  }
+}
