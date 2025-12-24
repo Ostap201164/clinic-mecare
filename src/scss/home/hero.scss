@@ -92,9 +92,6 @@
     }
   }
 
-  &__cards {
-  }
-
   &__card {
     margin-bottom: 16px;
     padding: 16px;
@@ -272,7 +269,6 @@
   .hero {
     padding: 28px 0 54px 0;
     &__container {
-      margin: 0 auto;
       width: 1112px;
     }
     &__main-card {
