@@ -207,9 +207,12 @@
     }
     &__grid {
       display: grid;
-      grid-template-columns: 520px 390px 270px;
-      grid-template-rows: 253px 258px;
+      grid-template-columns: repeat(4, 270px);
+      grid-template-rows: repeat(2, 258px);
       gap: 16px;
+      grid-template-areas:
+      "green green imageTop imageTop"
+      "imageL blue blue imageR";
     }
     &__card {
       border-radius: 14px;
@@ -217,8 +220,7 @@
     }
 
     &__card--green {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
+       grid-area: green;
       padding: 24px 20px;
     }
     &__card-title {
@@ -245,27 +247,22 @@
       height: 16.571px;
     }
     &__card--image-top {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      height: 254px;
+      grid-area: imageTop;
+
     }
     &__card--image-bottom-first {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      height: 258px;
-      width: 270px;
+      grid-area: imageL;
+
     }
     &__card--blue {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
+      grid-area: blue;
       padding: 16.399px 12.628px 15.058px 13.258px;
-      width: 354px;
+
       justify-self: center;
     }
     &__card--image-bottom-second {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-      height: 258px;
+      grid-area: imageR;
+      
     }
   }
 }
