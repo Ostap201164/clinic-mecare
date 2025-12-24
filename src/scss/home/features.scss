@@ -1,3 +1,84 @@
-.features{
-    background-color: red;
+.features {
+    padding: 40px 0;
+  &__container {
+    margin: 0 auto;
+    width: 327px;
+  }
+  &__header {
+    margin-bottom: 24px;
+  }
+  &__title {
+    color: var(--Neutrals-1000, #030527);
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    color: var(--Neutrals-900, #0d1525);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__card {
+    padding: 20px;
+    width: 327px;
+    height: 316px;
+    border-radius: 12px;
+    background: var(--Primary-100, #f0fbf9);
+  }
+  &__card-svg {
+    width: 48px;
+    height: 47.995px;
+    margin-bottom: 23px;
+  }
+  &__card-title {
+    color: var(--Neutrals-900, #0d1525);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  &__card-subtitle {
+    color: var(--Neutrals-700, #525b5a);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 52px;
+  }
+  &__card-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price {
+    color: var(--Neutrals-800, #181b39);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  &__card-btn {
+    border-radius: 30px;
+    background: var(--Primary-500, #5abeaf);
+    backdrop-filter: blur(20px);
+    color: var(--Base-White, #fff);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 8px 16px 7px 16px;
+  }
 }
