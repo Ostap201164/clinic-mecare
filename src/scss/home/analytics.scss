@@ -156,10 +156,12 @@
     }
     &__card--image-top {
       grid-area: imageTop;
+      width: 100%;
       height: 100%;
     }
     &__card--image-bottom-first {
       grid-area: imageL;
+      width: 100%;
       height: 100%;
     }
     &__card--blue {
@@ -169,6 +171,7 @@
     &__card--image-bottom-second {
       grid-area: imageR;
       height: 100%;
+      width: 100%;
     }
   }
 }
