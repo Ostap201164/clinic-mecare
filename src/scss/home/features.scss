@@ -214,7 +214,7 @@
 }
 
 @media (min-width: 1024px) {
-  .analytics {
+  .features {
     &__container {
       width: 928px;
     }
@@ -242,7 +242,7 @@
     &__list {
       display: flex;
       gap: 12px;
-      margin-bottom: 24px;
+      margin: 0 0 24px 0;
     }
     &__li {
       border-radius: 30px;
