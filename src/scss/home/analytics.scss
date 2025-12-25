@@ -118,7 +118,7 @@
     &__grid {
       display: grid;
       grid-template-columns: 270px 234px 104px 270px;
-      grid-template-rows: 258px;
+      grid-template-rows: 258px 258px;
       gap: 16px;
       grid-template-areas:
         "green green imageTop imageTop"
@@ -156,12 +156,10 @@
     }
     &__card--image-top {
       grid-area: imageTop;
-      width: 100%;
       height: 100%;
     }
     &__card--image-bottom-first {
       grid-area: imageL;
-      width: 100%;
       height: 100%;
     }
     &__card--blue {
@@ -170,7 +168,6 @@
     }
     &__card--image-bottom-second {
       grid-area: imageR;
-      width: 100%;
       height: 100%;
     }
   }
@@ -186,8 +183,11 @@
     &__grid {
       display: grid;
       grid-template-columns: 326px 281px 124px 326px;
-      grid-template-rows: 312px;
+      grid-template-rows: 312px 312px; 
       gap: 20px;
+      grid-template-areas:
+        "green green imageTop imageTop"
+        "imageL blue blue imageR";
     }
     &__card {
       border-radius: 16px;
@@ -231,8 +231,11 @@
     &__grid {
       display: grid;
       grid-template-columns: 356px 312px 124px 356px;
-      grid-template-rows: 346px;
+      grid-template-rows: 346px 346px;
       gap: 20px;
+      grid-template-areas:
+        "green green imageTop imageTop"
+        "imageL blue blue imageR";
     }
     &__card {
       border-radius: 16px;
@@ -265,6 +268,9 @@
       grid-template-columns: 402px 331px 137px 402px;
       grid-template-rows: 358px 346px;
       gap: 40px;
+      grid-template-areas:
+        "green green imageTop imageTop"
+        "imageL blue blue imageR";
     }
 
     &__card--green {
