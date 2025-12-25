@@ -21,138 +21,121 @@
     text-align: center;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 140%;
+    width: 327px;
+    margin: 0 auto;
   }
   &__list {
     display: flex;
     gap: 12px;
-    margin: 0;
     margin-bottom: 24px;
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
   }
   &__li {
     border-radius: 30px;
     border: 1px solid #ebebeb;
     backdrop-filter: blur(20px);
-    color: var(--Neutrals-900, #0d1525);
     padding: 16px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
     line-height: 140%;
+    text-align: center;
+    button {
+      color: var(--Neutrals-900, #0d1525);
+    }
   }
   &__li_all {
-    border-radius: 30px;
-    border: 1px solid #f2f5f7;
+    width: 110px;
     background: var(--Primary-500, #5abeaf);
-    backdrop-filter: blur(20px);
-    color: var(--Base-White, #fff);
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 140%;
+    button {
+      color: var(--Base-White, #fff);
+    }
   }
   &__li_body {
+    width: 202px;
   }
   &__li_diabet {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_heart {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_cancer {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_vitamin {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_women {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_skin {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_liver {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_ptofile {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
   &__li_function {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-    border: 0;
   }
 
   &__cards {
@@ -177,7 +160,7 @@
     font-family: Inter;
     font-size: 24px;
     font-weight: 600;
-    line-height: 34px;
+    line-height: 1.4;
     margin-bottom: 20px;
   }
   &__card-subtitle {
@@ -191,6 +174,7 @@
   &__card-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__price {
     color: var(--Neutrals-800, #181b39);
@@ -219,143 +203,105 @@
       width: 928px;
     }
     &__header {
-      margin-bottom: 24px;
-    }
-    &__title {
-      color: var(--Neutrals-1000, #030527);
-      text-align: center;
-      font-family: Inter;
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 140%;
-      margin-bottom: 24px;
-    }
-    &__subtitle {
-      color: var(--Neutrals-900, #0d1525);
-      text-align: center;
-      font-family: Inter;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 140%;
+      margin-bottom: 40px;
     }
     &__list {
-      display: flex;
-      gap: 12px;
-      margin: 0 0 24px 0;
-    }
-    &__li {
-      border-radius: 30px;
-      border: 1px solid #ebebeb;
-      backdrop-filter: blur(20px);
-      color: var(--Neutrals-900, #0d1525);
-      padding: 16px;
-      font-family: Inter;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 140%;
+      margin-bottom: 40px;
     }
     &__li_diabet {
       position: static;
-      width: auto;
+      width: 117px;
       height: auto;
       margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
     }
     &__li_heart {
       position: static;
-      width: auto;
+      width: 89px;
       height: auto;
       margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
     }
     &__li_cancer {
       position: static;
-      width: auto;
+      width: 102px;
       height: auto;
       margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
     }
     &__li_vitamin {
       position: static;
-      width: auto;
+      width: 106px;
       height: auto;
       margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
     }
     &__li_women {
       position: static;
-      width: auto;
+      width: 166px;
       height: auto;
       margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
-    }
-    &__li_skin {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    &__li_liver {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    &__li_ptofile {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    &__li_function {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-      border: 0;
     }
 
     &__cards {
       display: flex;
-      flex-direction: column;
-      gap: 40px;
+      flex-direction: row;
+      gap: 16px;
     }
     &__card {
-      padding: 20px;
-      width: 327px;
-      height: 316px;
-      border-radius: 12px;
-      background: var(--Primary-100, #f0fbf9);
+      padding: 20px 10px;
+      width: 298px;
+      height: 270px;
+    }
+    &__card-svg {
+      width: 39.771px;
+      height: 39.771px;
+      margin-bottom: 19px;
+    }
+    &__card-title {
+      width: 242.4px;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    &__card-subtitle {
+      font-size: 15px;
+      margin-bottom: 48px;
+    }
+    &__price {
+      font-size: 16px;
+    }
+    &__card-btn {
+      border-radius: 24px;
+      font-size: 15px;
+      padding: 6px 13.257px 6px 13.257px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .features {
+    padding: 80px 0;
+    &__container {
+      width: 1112px;
+    }
+    &__header {
+      margin-bottom: 58px;
+    }
+    &__li_skin {
+      position: static;
+      width: 120px;
+      height: auto;
+      margin: 0;
+    }
+    &__li_liver {
+      position: static;
+      width: 82px;
+      height: auto;
+      margin: 0;
+    }
+    &__cards {
+      gap: 20px;
+    }
+    &__card {
+      width: 360px;
+      height: 326px;
+      padding: 25px 12px;
     }
     &__card-svg {
       width: 48px;
@@ -363,43 +309,76 @@
       margin-bottom: 23px;
     }
     &__card-title {
-      color: var(--Neutrals-900, #0d1525);
-      font-family: Inter;
       font-size: 24px;
-      font-weight: 600;
-      line-height: 34px;
       margin-bottom: 20px;
     }
     &__card-subtitle {
-      color: var(--Neutrals-700, #525b5a);
-      font-family: Inter;
       font-size: 18px;
-      font-weight: 500;
-      line-height: 140%;
       margin-bottom: 52px;
     }
-    &__card-footer {
-      display: flex;
-      justify-content: space-between;
-    }
     &__price {
-      color: var(--Neutrals-800, #181b39);
-      font-family: Inter;
       font-size: 20px;
-      font-weight: 500;
-      line-height: 140%;
     }
     &__card-btn {
-      border-radius: 30px;
-      background: var(--Primary-500, #5abeaf);
-      backdrop-filter: blur(20px);
-      color: var(--Base-White, #fff);
-      text-align: center;
-      font-family: Inter;
       font-size: 18px;
-      font-weight: 500;
-      line-height: 140%;
       padding: 8px 16px 7px 16px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .features {
+    &__container {
+      width: 1280px;
+    }
+    &__cards {
+      gap: 40px;
+    }
+    &__card {
+      width: 376px;
+      height: 326px;
+      padding: 30px 22px 20px 20px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .features {
+    padding: 80px 0 64px 0;
+    &__container {
+      width: 1392px;
+    }
+    &__header {
+      margin-bottom: 40px;
+    }
+    &__title {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 103%;
+      margin-bottom: 24px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__list {
+      margin-bottom: 40px;
+    }
+    &__li_ptofile {
+      position: static;
+      width: 166px;
+      height: auto;
+      margin: 0;
+    }
+    &__li_function {
+      position: static;
+      width: 179px;
+      height: auto;
+      margin: 0;
+    }
+    &__card{
+      padding: 35px 51px;
+      width: 438px;
+      height: 347px;
     }
   }
 }
