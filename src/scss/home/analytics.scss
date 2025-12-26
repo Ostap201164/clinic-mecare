@@ -79,13 +79,11 @@
     height: 20px;
   }
   &__card--image-top {
-    width: 327px;
     height: 226.284px;
     background: url(../image/home-image/analytics/analytics-grany.jpg) lightgray
       50% / cover no-repeat;
   }
   &__card--image-bottom-first {
-    width: 327px;
     height: 317.815px;
     background: url(../image/home-image/analytics/analytics-instrument.jpg)
       lightgray 50% / cover no-repeat;
@@ -95,7 +93,6 @@
     padding: 20px 9px 20px 8px;
   }
   &__card--image-bottom-second {
-    width: 327px;
     height: 317.815px;
     background: url(../image/home-image/analytics/analytics-hand.jpg) lightgray
       50% / cover no-repeat;
@@ -217,9 +214,6 @@
     &__btn-svg {
       width: 20px;
       height: 20px;
-    }
-    &__card--blue {
-      padding: 35px 16px 34px 16px;
     }
   }
 }
