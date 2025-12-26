@@ -170,64 +170,37 @@
     }
     &__content-cards {
       display: grid;
-      grid-template-columns: 270px 234px 104px 270px;
-      grid-template-rows: 258px 258px;
+      grid-template-columns: 360px 268px 268px;
+      grid-template-rows: 184px 184px;
       gap: 16px;
       grid-template-areas:
-        "image blue billing"
-        "image pink billing";
+        "imageall blue billing"
+        "imageall pink billing";
     }
     &__card-image {
-      padding: 35px 89px 46px 16px;
+      padding: 38px 107px 43px 10px;
       border-radius: 8px;
       background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url("../image/home-image/services/nurse.jpg") center / cover no-repeat;
-        grid-area: image;
+      grid-area: imageall;
     }
     &__card-image-subtitle {
-      color: var(--Yellow-500, #ffe353);
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 140%;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
     &__card-image-title {
-      color: var(--Base-White, #fff);
-      font-family: Inter;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 140%;
-      margin-bottom: 115px;
+      font-size: 24px;
+      margin-bottom: 126px;
     }
     &__card-image-link {
-      color: var(--Base-White, #fff);
-      text-align: center;
-      font-family: Inter;
-      font-size: 11.179px;
-      font-weight: 500;
-      line-height: 140%;
-      padding: 9px 8px;
-      border-radius: 20px;
-      border: 0.699px solid #e9fffc;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.2) 100%
-      );
-      backdrop-filter: blur(20px);
+      font-size: 12.291px;
+      padding: 10px;
     }
     &__card-electronic {
-      padding: 24px;
-      border-radius: 12px;
-      background: var(--Primary-300, #cff1ec);
-      grid-area:blue;
+      padding: 18px;
+      grid-area: blue;
     }
     &__card-subtitle {
-      color: var(--Neutrals-900, #0d1525);
-      font-family: Inter;
-      font-size: 16px;
-      line-height: 140%;
+      font-size: 10px;
       margin-bottom: 58px;
     }
     &__card-footer {
@@ -262,12 +235,13 @@
       padding: 24px;
       border-radius: 12px;
       background: var(--Red-300, #fddbdb);
-      grid-area:pink;
+      grid-area: pink;
     }
     &__card-billing {
       border-radius: 12px;
       background: var(--Secondary-400, #1c404c);
       padding: 13px 23px;
+      grid-area: billing;
     }
     &__card-billing-subtitle {
       color: var(--Base-White, #fff);
