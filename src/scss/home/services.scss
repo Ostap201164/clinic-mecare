@@ -1,39 +1,304 @@
 .services {
-    
+  padding: 40px 0;
   &__container {
     margin: 0 auto;
     width: 327px;
   }
   &__header {
+    margin-bottom: 60px;
   }
   &__title {
+    color: var(--Neutrals-1000, #030527);
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+    margin: 0 auto;
   }
   &__subtitle {
+    color: var(--Neutrals-900, #0d1525);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 140%;
+    width: 299px;
   }
   &__content-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   &__card-image {
+    padding: 35px 89px 46px 16px;
+    border-radius: 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("../image/home-image/services/nurse.jpg") center / cover no-repeat;
   }
   &__card-image-subtitle {
+    color: var(--Yellow-500, #ffe353);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 16px;
   }
   &__card-image-title {
+    color: var(--Base-White, #fff);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 115px;
   }
   &__card-image-link {
+    color: var(--Base-White, #fff);
+    text-align: center;
+    font-family: Inter;
+    font-size: 11.179px;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 9px 8px;
+    border-radius: 20px;
+    border: 0.699px solid #e9fffc;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    backdrop-filter: blur(20px);
   }
   &__card-electronic {
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--Primary-300, #cff1ec);
   }
   &__card-subtitle {
+    color: var(--Neutrals-900, #0d1525);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 58px;
   }
   &__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__card-footer-title {
+    color: var(--Neutrals-900, #0d1525);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 168px;
   }
   &__card-footer-link {
+    border-radius: 30px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 12px;
   }
   &-card-footer-svg {
+    width: 20px;
+    height: 20px;
   }
   &__card-telehealth {
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--Red-300, #fddbdb);
   }
   &__card-billing {
+    border-radius: 12px;
+    background: var(--Secondary-400, #1c404c);
+    padding: 13px 23px;
+  }
+  &__card-billing-subtitle {
+    color: var(--Base-White, #fff);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    width: 282px;
+    margin-bottom: 186px;
+  }
+  &__card-billing-footer-title {
+    color: var(--Base-White, #fff);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 168px;
+  }
+  &__card-billing-footer-link {
+    border-radius: 30px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    backdrop-filter: blur(20px);
+    padding: 12px;
+  }
+  &__card-billing-footer-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--Secondary-100, #e8eced);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding: 60px 0;
+    &__container {
+      margin: 0 auto;
+      width: 928px;
+    }
+    &__title {
+      width: 848px;
+      font-size: 48px;
+      line-height: 120%;
+    }
+    &__subtitle {
+      width: 564px;
+      margin: 0 auto;
+    }
+    &__content-cards {
+      display: grid;
+      grid-template-columns: 270px 234px 104px 270px;
+      grid-template-rows: 258px 258px;
+      gap: 16px;
+      grid-template-areas:
+        "image blue billing"
+        "image pink billing";
+    }
+    &__card-image {
+      padding: 35px 89px 46px 16px;
+      border-radius: 8px;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../image/home-image/services/nurse.jpg") center / cover no-repeat;
+        grid-area: image;
+    }
+    &__card-image-subtitle {
+      color: var(--Yellow-500, #ffe353);
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+      margin-bottom: 16px;
+    }
+    &__card-image-title {
+      color: var(--Base-White, #fff);
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 140%;
+      margin-bottom: 115px;
+    }
+    &__card-image-link {
+      color: var(--Base-White, #fff);
+      text-align: center;
+      font-family: Inter;
+      font-size: 11.179px;
+      font-weight: 500;
+      line-height: 140%;
+      padding: 9px 8px;
+      border-radius: 20px;
+      border: 0.699px solid #e9fffc;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      backdrop-filter: blur(20px);
+    }
+    &__card-electronic {
+      padding: 24px;
+      border-radius: 12px;
+      background: var(--Primary-300, #cff1ec);
+      grid-area:blue;
+    }
+    &__card-subtitle {
+      color: var(--Neutrals-900, #0d1525);
+      font-family: Inter;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 58px;
+    }
+    &__card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__card-footer-title {
+      color: var(--Neutrals-900, #0d1525);
+      font-family: Inter;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 150%;
+      width: 168px;
+    }
+    &__card-footer-link {
+      border-radius: 30px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      padding: 12px;
+    }
+    &-card-footer-svg {
+      width: 20px;
+      height: 20px;
+    }
+    &__card-telehealth {
+      padding: 24px;
+      border-radius: 12px;
+      background: var(--Red-300, #fddbdb);
+      grid-area:pink;
+    }
+    &__card-billing {
+      border-radius: 12px;
+      background: var(--Secondary-400, #1c404c);
+      padding: 13px 23px;
+    }
+    &__card-billing-subtitle {
+      color: var(--Base-White, #fff);
+      font-family: Inter;
+      font-size: 16px;
+      line-height: 140%;
+      width: 282px;
+      margin-bottom: 186px;
+    }
+    &__card-billing-footer-title {
+      color: var(--Base-White, #fff);
+      font-family: Inter;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 150%;
+      width: 168px;
+    }
+    &__card-billing-footer-link {
+      border-radius: 30px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      backdrop-filter: blur(20px);
+      padding: 12px;
+    }
+    &__card-billing-footer-svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--Secondary-100, #e8eced);
+    }
   }
 }
