@@ -24,6 +24,7 @@
     font-size: 18px;
     line-height: 140%;
     width: 299px;
+    margin: 0 auto;
   }
   &__content-cards {
     display: flex;
@@ -156,7 +157,6 @@
   .services {
     padding: 60px 0;
     &__container {
-      margin: 0 auto;
       width: 928px;
     }
     &__title {
@@ -166,7 +166,6 @@
     }
     &__subtitle {
       width: 564px;
-      margin: 0 auto;
     }
     &__content-cards {
       display: grid;
@@ -179,9 +178,6 @@
     }
     &__card-image {
       padding: 38px 107px 43px 10px;
-      border-radius: 8px;
-      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("../image/home-image/services/nurse.jpg") center / cover no-repeat;
       grid-area: imageall;
     }
     &__card-image-subtitle {
@@ -203,76 +199,219 @@
       font-size: 10px;
       margin-bottom: 58px;
     }
-    &__card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     &__card-footer-title {
-      color: var(--Neutrals-900, #0d1525);
-      font-family: Inter;
-      font-size: 30px;
-      font-weight: 600;
+      font-size: 24px;
       line-height: 150%;
-      width: 168px;
+      width: 129.06px;
     }
     &__card-footer-link {
-      border-radius: 30px;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.2) 100%
-      );
-      backdrop-filter: blur(20px);
-      backdrop-filter: blur(20px);
+      padding: 10px;
+    }
+    &__card-footer-svg {
+      width: 15.364px;
+      height: 15.364px;
+    }
+    &__card-telehealth {
+      padding: 18px;
+      grid-area: pink;
+    }
+    &__card-billing {
+      padding: 44px 18px;
+      grid-area: billing;
+    }
+    &__card-billing-subtitle {
+      font-size: 10px;
+      width: 231px;
+      margin-bottom: 142px;
+    }
+    &__card-billing-footer-title {
+      font-size: 24px;
+      width: 129px;
+    }
+    &__card-billing-footer-link {
+      padding: 10px;
+    }
+    &__card-billing-footer-svg {
+      width: 15.364px;
+      height: 15.364px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .services {
+    &__container {
+      width: 1120px;
+    }
+    &__content-cards {
+      grid-template-columns: 433.907px 324px 324px;
+      grid-template-rows: 222px 222px;
+      gap: 20px;
+    }
+    &__card-image {
+      padding: 40px 116px 31px 24px;
+    }
+    &__card-image-subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    &__card-image-title {
+      font-size: 30px;
+      margin-bottom: 171px;
+    }
+    &__card-image-link {
+      font-size: 14.834px;
       padding: 12px;
     }
-    &-card-footer-svg {
+    &__card-electronic {
+      padding: 22px 22px 18px 22px;
+    }
+    &__card-subtitle {
+      font-size: 14px;
+      margin-bottom: 54px;
+    }
+    &__card-footer-title {
+      font-size: 30px;
+      width: 155.762px;
+    }
+    &__card-footer-link {
+      padding: 12px;
+    }
+    &__card-footer-svg {
+      width: 18.543px;
+      height: 18.543px;
+    }
+    &__card-telehealth {
+      padding: 22px 22px 18px 22px;
+    }
+    &__card-billing {
+      padding: 24px 22px 21px 22px;
+    }
+    &__card-billing-subtitle {
+      font-size: 14px;
+      width: 279px;
+      margin-bottom: 171px;
+    }
+    &__card-billing-footer-title {
+      font-size: 30px;
+      width: 155.762px;
+    }
+    &__card-billing-footer-link {
+      padding: 12px;
+    }
+    &__card-billing-footer-svg {
+      width: 18.543px;
+      height: 18.543px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services {
+    padding: 80px 0;
+    &__container {
+      width: 1280px;
+    }
+    &__content-cards {
+      grid-template-columns: 468px 350px 350px;
+      grid-template-rows: 240px 240px;
+    }
+    &__card-image {
+      padding: 40px 128px 40px 24px;
+    }
+    &__card-image-subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__card-image-title {
+      margin-bottom: 189px;
+    }
+    &__card-image-link {
+      font-size: 16px;
+      padding: 13px 12px;
+    }
+    &__card-electronic {
+      padding: 24px;
+    }
+    &__card-subtitle {
+      font-size: 16px;
+      margin-bottom: 58px;
+    }
+    &__card-footer-title {
+      width: 168px;
+    }
+    &__card-footer-svg {
       width: 20px;
       height: 20px;
     }
     &__card-telehealth {
       padding: 24px;
-      border-radius: 12px;
-      background: var(--Red-300, #fddbdb);
-      grid-area: pink;
     }
     &__card-billing {
-      border-radius: 12px;
-      background: var(--Secondary-400, #1c404c);
-      padding: 13px 23px;
-      grid-area: billing;
+      padding: 30px 24px;
     }
     &__card-billing-subtitle {
-      color: var(--Base-White, #fff);
-      font-family: Inter;
       font-size: 16px;
-      line-height: 140%;
-      width: 282px;
-      margin-bottom: 186px;
+      width: 302px;
+      margin-bottom: 174px;
     }
     &__card-billing-footer-title {
-      color: var(--Base-White, #fff);
-      font-family: Inter;
-      font-size: 30px;
-      font-weight: 600;
-      line-height: 150%;
       width: 168px;
-    }
-    &__card-billing-footer-link {
-      border-radius: 30px;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.2) 100%
-      );
-      backdrop-filter: blur(20px);
-      padding: 12px;
     }
     &__card-billing-footer-svg {
       width: 20px;
       height: 20px;
-      fill: var(--Secondary-100, #e8eced);
+    }
+  }
+}
+
+@media (min-width: 1920px){
+  .services{
+    &__container{
+      width: 1392px;
+    }
+    &__title {
+      width: 976px;
+      font-size: 60px;
+      line-height: 103%;
+      font-weight: 700;
+    }
+    &__subtitle {
+      width: 786px;
+      font-size: 20px;
+    }
+    &__content-cards {
+      grid-template-columns: 548px 384px 384px;
+      gap: 40px;
+    }
+    &__card-image {
+      padding: 40px 150px 40px 28px;
+    }
+    &__card-image-subtitle {
+      margin-bottom: 16px;
+    }
+    &__card-image-title {
+      margin-bottom: 258px;
+      width: 370px;
+    }
+    &__card-electronic {
+      padding: 24px 41px;
+    }
+    &__card-subtitle {
+      font-size: 18px;
+      margin-bottom: 52px;
+    }
+    &__card-telehealth {
+      padding: 24px 41px;
+    }
+    &__card-billing {
+      padding: 30px;
+    }
+    &__card-billing-subtitle {
+      font-size: 18px;
+      width: 320px;
+      margin-bottom: 145px;
     }
   }
 }
