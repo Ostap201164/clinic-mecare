@@ -104,6 +104,10 @@
     backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     padding: 12px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
   &__card-footer-svg {
     width: 20px;
@@ -144,6 +148,10 @@
     );
     backdrop-filter: blur(20px);
     padding: 12px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
   &__card-billing-footer-svg {
     width: 20px;
