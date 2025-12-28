@@ -270,7 +270,10 @@
     }
     &__card-light_link {
       font-size: 13px;
-      padding: 14px 126px;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     &__card-dark_titel {
       line-height: 36px;
@@ -298,7 +301,10 @@
     }
     &__card-dark_link {
       font-size: 13px;
-      padding: 14px 126px;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
