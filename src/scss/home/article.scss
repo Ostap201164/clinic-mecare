@@ -155,8 +155,45 @@
   }
 }
 
-@media (min-width: 1280px){
-    .article{
-        
+@media (min-width: 1280px) {
+  .article {
+    &__container {
+      width: 1120px;
     }
+    &__cards {
+      gap: 28px;
+    }
+    &__card {
+      padding-bottom: 24px;
+    }
+    &__card-img {
+      border-radius: 12px 12px 0 0;
+      width: 352px;
+      height: 220px;
+      margin-bottom: 16px;
+    }
+    &__card-control {
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    &__card-svg {
+      width: 18px;
+      height: 18px;
+      padding: 0.938px 2.438px;
+    }
+    &__card-control-text {
+      font-size: 14px;
+    }
+    &__card-title {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+    &__card-text {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    &__card-date {
+      font-size: 16px;
+    }
+  }
 }
