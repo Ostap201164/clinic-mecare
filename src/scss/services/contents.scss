@@ -1,11 +1,11 @@
 .contents {
-    padding: 20px 0;
+  padding: 20px 0;
   &__container {
     width: 351px;
     margin: 0 auto;
   }
   &__block {
-    padding:20px 12px ;
+    padding: 20px 12px;
     border-radius: 16px;
     background: linear-gradient(180deg, #fff 0%, #cff1ec 182.65%);
   }
@@ -27,6 +27,7 @@
     margin-bottom: 40px;
   }
   &__link {
+    margin: 0 auto 24px auto;
     display: block;
     border-radius: 30px;
     border: 1px solid var(--BG-BG-1, #f2f5f7);
@@ -40,11 +41,36 @@
     font-weight: 500;
     line-height: 140%;
     padding: 13px 109px;
-    margin-bottom: 24px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   &__image {
     width: 327px;
     height: 214px;
     border-radius: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contents {
+    &__container {
+      width: 928px;
+    }
+    &__block {
+      padding: 20px 16px;
+    }
+    &__titel {
+      font-size: 48px;
+    }
+    &__link {
+      padding: 13px 20px;
+      width: 149px;
+    }
+    &__image {
+      width: 895px;
+      height: 100%;
+    }
   }
 }
