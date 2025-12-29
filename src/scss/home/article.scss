@@ -1,0 +1,46 @@
+.article {
+  &__container {
+    margin: 0 auto;
+    width: 327px;
+  }
+  &__header {
+    margin-bottom: 40px;
+  }
+  &__title {
+    color: var(--Neutrals-1000, #030527);
+text-align: center;
+font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+line-height: 140%; 
+margin-bottom: 24px;
+  }
+  &__subtitle {
+    color: var(--Neutrals-900, #0D1525);
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+line-height: 140%; 
+margin: 0 auto;
+  }
+  &__cards {
+  }
+  &__card {
+  }
+  &__card-img {
+  }
+  &__card-control {
+  }
+  &__card-svg {
+  }
+  &__card-control-text {
+  }
+  &__card-title {
+  }
+  &__card-text {
+  }
+  &__card-date {
+  }
+  &__btn {
+  }
+}
