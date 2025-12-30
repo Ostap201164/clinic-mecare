@@ -1,0 +1,74 @@
+.quality {
+    padding: 40px 0;
+  &__container {
+    margin: 0 auto;
+    width: 327px;
+  }
+  &__title {
+    margin: 0 auto;
+    color: var(--Neutrals-1000, #030527);
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__card {
+    width: 300px;
+    border-radius: 16px;
+    border: 1px solid var(--Neutrals-200, #efefef);
+    background: var(--Base-White, #fff);
+    box-shadow: 0 4px 24px 0 rgba(100, 211, 194, 0.08),
+      0 4px 14px 0 rgba(100, 211, 194, 0.04);
+    padding: 12px 15px;
+  }
+  &__card-logo {
+    fill: var(--Red-500, #DF7E7E);
+    width: 71.32px;
+    height: 68.132px;
+    margin-bottom: 24px;
+  }
+  &__card-title {
+    color: var(--Neutrals-900, #0d1525);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 24px;
+  }
+  &__card-text {
+    color: var(--Neutrals-800, #181b39);
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 140%; /* 19.6px */
+    margin-bottom: 24px;
+  }
+  &__card-link {
+    display: block;
+    border-radius: 30px;
+    border: 1px solid var(--Red-100, #fef4f4);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+    backdrop-filter: blur(20px);
+    padding: 13px 12px;
+    color: var(--Neutrals-900, #0d1525);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  &__link-svg {
+    width: 20px;
+    height: 20px;
+    fill: #030527;
+  }
+}
