@@ -28,6 +28,11 @@
       0 4px 14px 0 rgba(100, 211, 194, 0.04);
     padding: 12px 15px;
   }
+
+  &__card-images{
+   display: flex;
+   justify-content: space-between;
+  }
   &__card-logo {
     fill: var(--Red-500, #DF7E7E);
     width: 71.32px;
@@ -50,6 +55,10 @@
     margin-bottom: 24px;
   }
   &__card-link {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
     display: flex;
     align-items: center;
     justify-content: center;
