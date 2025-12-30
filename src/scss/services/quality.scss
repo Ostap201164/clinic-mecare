@@ -17,6 +17,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+    gap: 14px;
   }
   &__card {
     width: 300px;
