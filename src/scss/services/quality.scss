@@ -1,5 +1,5 @@
 .quality {
-    padding: 40px 0;
+  padding: 40px 0;
   &__container {
     margin: 0 auto;
     width: 327px;
@@ -17,6 +17,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 14px;
   }
   &__card {
@@ -29,12 +30,12 @@
     padding: 12px 15px;
   }
 
-  &__card-images{
-   display: flex;
-   justify-content: space-between;
+  &__card-images {
+    display: flex;
+    justify-content: space-between;
   }
   &__card-logo {
-    fill: var(--Red-500, #DF7E7E);
+    fill: var(--Red-500, #df7e7e);
     width: 71.32px;
     height: 68.132px;
     margin-bottom: 24px;
@@ -48,6 +49,7 @@
     margin-bottom: 24px;
   }
   &__card-text {
+    width: 270px;
     color: var(--Neutrals-800, #181b39);
     font-family: Inter;
     font-size: 14px;
@@ -82,5 +84,67 @@
   &__link-svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quality {
+    &__container {
+      width: 928px;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 120%;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .quality {
+    padding: 60px 0;
+    &__container {
+      width: 1096px;
+    }
+    &__list {
+      gap: 20px;
+    }
+    &__card {
+      padding: 16px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .quality {
+    &__container {
+      width: 1208px;
+    }
+    &__list {
+      gap: 40px;
+    }
+    &__card {
+      width: 376px;
+      padding: 20px 28px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .quality {
+    &__container {
+      width: 1228px;
+    }
+    &__list {
+      gap: 50px;
+    }
+    &__title {
+      font-size: 60px;
+      font-weight: 700;
+    }
   }
 }
