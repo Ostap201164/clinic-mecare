@@ -41,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 16px;
   }
   &__header-text {
     width: 199px;
@@ -55,8 +56,13 @@
     height: 24px;
   }
   &__header-svg-minus {
-    width: 24px;
-    height: 24px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
   &__content {
     color: var(--Neutrals-700, #525b5a);
