@@ -38,13 +38,12 @@
     padding: 16px 9px;
   }
   &__item-header {
+    width: 327px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 16px;
   }
   &__header-text {
-    width: 199px;
     color: var(--Neutrals-900, #0d1525);
     font-family: Inter;
     font-size: 18px;
@@ -65,9 +64,12 @@
     white-space: nowrap;
   }
   &__content {
-    color: var(--Neutrals-700, #525b5a);
-    font-family: Inter;
-    font-size: 16px;
-    line-height: 140%; 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 }
