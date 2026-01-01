@@ -24,10 +24,15 @@
     line-height: 140%;
     margin: 0 auto;
   }
+  &__container-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
   &__item {
     border-radius: 16px;
@@ -38,9 +43,8 @@
     padding: 16px 9px;
     position: relative;
   }
-  
-&__item:focus-within {
 
+  &__item:focus-within {
     .answers__content {
       position: static;
       width: auto;
@@ -56,7 +60,6 @@
       line-height: 140%;
     }
 
-    /* ховаємо плюс */
     .answers__header-svg-plus {
       position: absolute;
       width: 1px;
@@ -67,7 +70,6 @@
       white-space: nowrap;
     }
 
-    /* показуємо мінус */
     .answers__header-svg-minus {
       position: static;
       width: 24px;
@@ -115,53 +117,22 @@
   }
 }
 
-@media (min-width: 1024px){
-.answers{
-  &__container{
-    width: 920px;
-  }
-  &__title {
-    font-size: 48px;
-    line-height: 120%;
-  }
-  &__list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-  }
-  &__item {
-    padding: 16px 10px;
-    break-inside: avoid;
-  }
-  &__item {
-      &:focus-within {
-        .answers__content {
-          display: none;
-        }
-      }
-
-      &:hover {
-        .answers__content {
-          position: static;
-          width: auto;
-          height: auto;
-          margin-top: 12px;
-          overflow: visible;
-          clip: auto;
-          white-space: normal;
-        }
-
-        .answers__header-svg-plus {
-          display: none;
-        }
-
-        .answers__header-svg-minus {
-          display: block;
-          width: 24px;
-          height: 24px;
-        }
-      }
+@media (min-width: 1024px) {
+  .answers {
+    &__container {
+      width: 920px;
     }
+    &__title {
+      font-size: 48px;
+      line-height: 120%;
+    }
+    &__container-list {
+      flex-direction: row;
+      gap: 20px;
+    }
+    &__item {
+      padding: 16px 10px;
+      width: 450px;
+    }
+  }
 }
-}
-
