@@ -36,7 +36,49 @@
     box-shadow: 0 4px 24px 0 rgba(100, 211, 194, 0.08),
       0 4px 14px 0 rgba(100, 211, 194, 0.04);
     padding: 16px 9px;
+    position: relative;
   }
+  
+&__item:focus-within {
+
+    .answers__content {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-top: 16px;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+
+      color: var(--Neutrals-700, #4a4f62);
+      font-family: Inter;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    /* ховаємо плюс */
+    .answers__header-svg-plus {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    /* показуємо мінус */
+    .answers__header-svg-minus {
+      position: static;
+      width: 24px;
+      height: 24px;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+    }
+  }
+
   &__item-header {
     display: flex;
     justify-content: space-around;
@@ -53,15 +95,6 @@
     width: 24px;
     height: 24px;
   }
-  &__header-svg-plus:hover{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
   &__header-svg-minus {
     position: absolute;
     width: 1px;
@@ -70,10 +103,6 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-  }
-  &__header-svg-minus:hover{
-    width: 24px;
-    height: 24px;
   }
   &__content {
     position: absolute;
@@ -85,3 +114,4 @@
     white-space: nowrap;
   }
 }
+
