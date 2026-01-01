@@ -26,7 +26,7 @@
   }
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
   }
   &__item {
@@ -38,7 +38,6 @@
     padding: 16px 9px;
   }
   &__item-header {
-    width: 327px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -54,6 +53,15 @@
     width: 24px;
     height: 24px;
   }
+  &__header-svg-plus:hover{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
   &__header-svg-minus {
     position: absolute;
     width: 1px;
@@ -62,6 +70,10 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+  }
+  &__header-svg-minus:hover{
+    width: 24px;
+    height: 24px;
   }
   &__content {
     position: absolute;
