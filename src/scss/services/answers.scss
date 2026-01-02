@@ -83,8 +83,9 @@
 
   &__item-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
   &__header-text {
     color: var(--Neutrals-900, #0d1525);
@@ -133,6 +134,57 @@
     &__item {
       padding: 16px 10px;
       width: 450px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .answers {
+    &__container {
+      width: 1116px;
+    }
+    &__item {
+      padding: 16px 12px;
+      width: 548px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .answers {
+    &__container {
+      width: 1154px;
+    }
+    &__item {
+      width: 560px;
+      padding: 16px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .answers {
+    &__container {
+      width: 1274px;
+    }
+    &__title {
+      font-size: 60px;
+      font-weight: 700;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__container-list {
+      gap: 40px;
+    }
+    &__list {
+      gap: 40px;
+    }
+    &__item {
+      width: 606px;
+    }
+    &__header-text {
+      font-size: 20px;
     }
   }
 }
