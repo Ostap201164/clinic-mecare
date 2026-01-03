@@ -1,5 +1,5 @@
 .header {
-  margin-top: 16px;
+  padding-top: 16px;
   padding-bottom: 16px;
   position: fixed;
   top: 0;
@@ -115,7 +115,7 @@
 
 @media (min-width: 1024px) {
   .header {
-    margin-top: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
     &__container {
       width: 928px;
