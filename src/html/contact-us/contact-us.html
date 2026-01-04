@@ -1,32 +1,107 @@
 <section class="contact">
-    <div class="contact__container">
-        <div class="contact__info">
-
+  <div class="contact__container">
+    <div class="contact__info"></div>
+    <form class="contact__form">
+      <div class="contact__form-row">
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="first-name">First Name</label>
+          <input
+            class="contact__form-input"
+            type="text"
+            id="first-name"
+            name="firstName"
+            placeholder="Esther"
+          />
         </div>
-        <form class="contact__form">
-            <div class="contact__form-row">
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="first-name">First Name</label>
-                    <input class="contact__form-input" type="text" id="first-name" name="firstName" placeholder="Esther"/>
-                </div>
 
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="last-name">Last Name</label>
-                    <input class="contact__form-input" type="text" id="last-name" name="lastName" placeholder="Howard"/>
-                </div>
-            </div>
-            
-            <div class="contact__form-row">
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="email">Your Email</label>
-                    <input class="contact__form-input" type="email" id="email" name="email" placeholder="hipixem@gmail.com"/>
-                </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="last-name">Last Name</label>
+          <input
+            class="contact__form-input"
+            type="text"
+            id="last-name"
+            name="lastName"
+            placeholder="Howard"
+          />
+        </div>
+      </div>
 
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="phone">Your Number</label>
-                    <input class="contact__form-input" type="tel" id="phone" name="phone" placeholder="(208) 555-0112"/>
-                </div>
-            </div>
-        </form>
-    </div>
+      <div class="contact__form-row">
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="email">Your Email</label>
+          <input
+            class="contact__form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hipixem@gmail.com"
+          />
+        </div>
+
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="phone">Your Number</label>
+          <input
+            class="contact__form-input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(208) 555-0112"
+          />
+        </div>
+      </div>
+      <div class="contact__form-services">
+        <p class="contact__form-services-title">Services</p>
+
+        <ul class="contact__form-services-list">
+          <label class="contact__form-checkbox">
+            <input
+              class="contact__form-checkbox-input"
+              type="checkbox"
+              checked
+            />
+            <span class="contact__form-checkbox-text">Cardiology</span>
+          </label>
+
+          <label class="contact__form-checkbox">
+            <input class="contact__form-checkbox-input" type="checkbox" />
+            <span class="contact__form-checkbox-text">Endocrinology</span>
+          </label>
+
+          <label class="contact__form-checkbox">
+            <input class="contact__form-checkbox-input" type="checkbox" />
+            <span class="contact__form-checkbox-text">Neurology</span>
+          </label>
+
+          <label class="contact__form-checkbox">
+            <input class="contact__form-checkbox-input" type="checkbox" />
+            <span class="contact__form-checkbox-text">Eye care</span>
+          </label>
+
+          <label class="contact__form-checkbox">
+            <input class="contact__form-checkbox-input" type="checkbox" />
+            <span class="contact__form-checkbox-text">Dentist</span>
+          </label>
+
+          <label class="contact__form-checkbox">
+            <input class="contact__form-checkbox-input" type="checkbox" />
+            <span class="contact__form-checkbox-text">Others</span>
+          </label>
+        </ul>
+      </div>
+
+      <div class="contact__form-field contact__form-field--full">
+        <label class="contact__form-label" for="message">Message</label>
+        <textarea
+          class="contact__form-textarea"
+          id="message"
+          name="message"
+          placeholder="Write here...."
+        ></textarea>
+      </div>
+
+      <button class="contact__form-button" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
 </section>
