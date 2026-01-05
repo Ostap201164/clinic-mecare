@@ -61,31 +61,104 @@
     }
   }
   &__form {
+    border-radius: 16px;
+    background: var(--Base-White, #fff);
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.04);
+    padding: 16px 12px;
   }
   &__form-row {
   }
   &__form-field {
   }
   &__form-label {
+    color: var(--Neutrals-700, #525b5a);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 12px;
   }
   &__form-input {
+    color: var(--Neutrals-600, #7c8483);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    border-radius: 16px;
+    border: 1px solid var(--Neutrals-200, #efefef);
+    background: var(--Base-White, #fff);
+    box-shadow:
+      0 4px 24px 0 rgba(100, 211, 194, 0.08),
+      0 4px 14px 0 rgba(100, 211, 194, 0.04);
+    width: 327px;
+    height: 62px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    padding-left: 20px;
   }
   &__form-services {
+    margin-bottom: 24px;
   }
   &__form-services-title {
+    color: var(--Neutrals-700, #525b5a);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+  &__form-lists{
+    display: flex;
+    gap: 24px;
   }
   &__form-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   &__form-checkbox {
   }
   &__form-checkbox-input {
+    
   }
+
   &__form-checkbox-text {
+    color: var(--Neutrals-600, #7c8483);
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
   }
   &__form-field--full {
   }
   &__form-textarea {
+    border-radius: 16px;
+    border: 1px solid var(--Neutrals-200, #efefef);
+    background: var(--Base-White, #fff);
+    box-shadow:
+      0 4px 24px 0 rgba(100, 211, 194, 0.08),
+      0 4px 14px 0 rgba(100, 211, 194, 0.04);
+    width: 327px;
+    height: 100px;
+    resize: none;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    padding-top: 20px;
   }
   &__form-button {
+    border-radius: 30px;
+    border: 1px solid var(--BG-BG-1, #f2f5f7);
+    background: var(--Primary-500, #5abeaf);
+    box-shadow:
+      0 2px 3px 0 rgba(0, 0, 0, 0.01),
+      0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    padding: 20px;
+    color: var(--Base-White, #fff);
+    text-align: center;
+    font-family: "Sequel Sans";
+    font-size: 16px;
+    font-weight: 315;
+    line-height: 140%;
+    width: 327px;
+    margin: 0 auto;
   }
 }
