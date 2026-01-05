@@ -1,52 +1,96 @@
+
 .header {
-  margin-top: 16px;
-  padding-bottom: 16px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 16px 0;
+
   backdrop-filter: blur(50px);
+
+  @media (min-width: 1024px) {
+    padding: 20px 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     width: 327px;
     margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      width: 928px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 1120px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
     gap: 6px;
+
     width: 104px;
     height: 30px;
-        cursor: pointer;
+
+    cursor: pointer;
     transition: transform 0.3s ease;
+
     &:hover {
       transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      gap: 8px;
+      width: 140px;
+      height: 40px;
     }
   }
 
   &__logo-svg {
-    height: 23px;
     width: 23px;
-    border-radius: 6.667px;
-    border: 0.833px solid #fafffe;
-    background: var(--Primary-500, #5abeaf);
-    box-shadow: 0 0.833px 3.333px 0 rgba(255, 255, 255, 0.35) inset,
-      0.833px -3.333px 3.333px 0 rgba(255, 255, 255, 0.2) inset;
+    height: 23px;
     padding: 3.75px;
+
+    border: 0.833px solid $white;
+    border-radius: 6.667px;
+    background: $primary-500;
+    box-shadow: $shadow-inset-light, $shadow-inset-soft;
+
+    @media (min-width: 1024px) {
+      width: 33px;
+      height: 33px;
+      padding: 5px;
+    }
   }
 
   &__logo-name {
-    color: var(--Neutrals-800, #181b39);
+    color: $neutral-800;
     text-align: center;
+
     font-family: "Sequel Sans";
     font-size: 18px;
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+    }
   }
 
   &__links {
     display: none;
+
     button {
       cursor: pointer;
       transition: all 0.3s ease;
@@ -55,140 +99,96 @@
         transform: scale(1.05);
       }
     }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    @media (min-width: 1120px) {
+      gap: 30px;
+    }
   }
 
   &__link-join {
-    color: var(--Secondary-400, #1c404c);
-    text-align: center;
-    font-family: "Sequel Sans";
-    font-weight: 315;
     padding: 4px 8px;
 
+    color: $secondary-400;
+    text-align: center;
+
+    font-family: "Sequel Sans";
+    font-weight: 315;
   }
 
   &__link-get {
-    color: var(--Base-White, #fff);
-    text-align: center;
+    padding: 12px 20px;
+
+    border: 1px solid $bg-1;
     border-radius: 30px;
-    border: 1px solid var(--BG-BG-1, #f2f5f7);
-    background: var(--Primary-500, #5abeaf);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01),
-      0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    background: $primary-500;
+    box-shadow: $shadow-button;
+
+    color: $white;
+    text-align: center;
+
     font-family: Inter;
     font-weight: 500;
     line-height: 140%;
-    padding: 12px 20px;
   }
 
-  &__btn-burger{
-          cursor: pointer;
-      transition: all 0.3s ease;
-      &:hover {
-        transform: scale(1.05);
-      }
+  &__btn-burger {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
+
   &__burger-svg {
-    border-radius: 6px;
-    border: 1px solid var(--BG-BG-3, #e3e3e9);
-    background: var(--Greyscale-0, #fff);
-    box-shadow: 0.8px 1.6px 3.2px 0 rgba(13, 13, 18, 0.08);
     display: flex;
+
     width: 23px;
     height: 22px;
     padding: 5px 3.332px 5px 3.334px;
+
+    border: 1px solid $bg-3;
+    border-radius: 6px;
+    background: $greyscale-0;
+    box-shadow: $shadow-burger;
   }
 }
 
 .nav {
   display: none;
-  &__item {
-    color: var(--Neutrals-800, #181b39);
-    text-align: center;
-    font-family: "Sequel Sans";
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
-    &:hover {
-      transform: translateY(-2px);
-    }
-  }
-}
 
-@media (min-width: 1024px) {
-  .header {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    &__container {
-      width: 928px;
-      margin: 0 auto;
-    }
-
-    &__logo {
-      gap: 8px;
-      width: 140px;
-      height: 40px;
-    }
-
-    &__logo-svg {
-      height: 33px;
-      width: 33px;
-      padding: 5px;
-    }
-
-    &__logo-name {
-      font-size: 24px;
-    }
-
-    &__links {
-      display: flex;
-      align-items: center;
-      gap: 21px;
-    }
-    &__btn-burger{
-      display: none;
-    }
-  }
-  .nav {
+  @media (min-width: 1024px) {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-}
 
-@media (min-width: 1024px) {
-  .header {
-    &__container {
-      width: 1120px;
-      margin: 0 auto;
-    }
-
-    &__links {
-      gap: 30px;
-    }
-
-    &__link-get {
-      font-weight: 500;
-    }
-  }
-  .nav {
+  @media (min-width: 1120px) {
     gap: 30px;
   }
-}
 
-@media (min-width: 1440px) {
-  .header {
-    &__container {
-      width: 1280px;
-    }
-    &__logo-name {
-      font-size: 24px;
-    }
-  }
-}
+  &__item {
+    cursor: pointer;
 
-@media (min-width: 1920px) {
-  .header {
-    &__container {
-      width: 1392px;
+    color: $neutral-800;
+    text-align: center;
+
+    font-family: "Sequel Sans";
+
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
     }
   }
 }
