@@ -1,6 +1,7 @@
 .contact {
   padding: 56px 0;
   &__container {
+    align-items: center;
     margin: 0 auto;
     width: 351px;
     display: flex;
@@ -106,7 +107,7 @@
     line-height: 140%;
     margin-bottom: 16px;
   }
-  &__form-lists{
+  &__form-lists {
     display: flex;
     gap: 24px;
   }
@@ -118,7 +119,6 @@
   &__form-checkbox {
   }
   &__form-checkbox-input {
-    
   }
 
   &__form-checkbox-text {
@@ -158,7 +158,60 @@
     font-size: 16px;
     font-weight: 315;
     line-height: 140%;
-    width: 327px;
+    //width: 327px;
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .contact {
+    padding: 90px 0;
+    &__container {
+      width: 928px;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+    &__info {
+      width: 422px;
+    }
+    &__title {
+      text-align: start;
+      font-size: 48px;
+    }
+    &__item {
+      width: 320px;
+    }
+    &__form-row {
+      display: flex;
+      gap: 16px;
+    }
+    &__form-field {
+      width: 210px;
+    }
+    &__form-input {
+      width: 210px;
+    }
+    &__form-services {
+      margin-bottom: 24px;
+    }
+    &__form-lists {
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__form-services-list {
+      flex-direction: row;
+    }
+    &__form-checkbox {
+      width: 125px;
+    }
+    &__form-textarea {
+      width: 436px;
+    }
+    &__form-button {
+      padding: 20px 30px;
+    }
+  }
+}
+
+
