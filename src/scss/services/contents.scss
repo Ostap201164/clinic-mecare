@@ -1,132 +1,84 @@
 .contents {
   padding: 20px 0;
+  @media (min-width: 1280px) { padding: 40px 0; }
+  @media (min-width: 1920px) { padding: 60px 0; }
+
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 351px;
     margin: 0 auto;
+    @media (min-width: 1024px) { width: 928px; }
+    @media (min-width: 1280px) { width: 1120px; }
+    @media (min-width: 1440px) { width: 1360px; }
+    @media (min-width: 1920px) { width: 1600px; }
   }
+
   &__block {
     padding: 20px 12px;
+    background: $gradient-content;
     border-radius: 16px;
-    background: linear-gradient(180deg, #fff 0%, #cff1ec 182.65%);
+    @media (min-width: 1024px) { padding: 20px 16px 0 16px; }
+    @media (min-width: 1280px) { padding: 40px 100px 0 100px; }
+    @media (min-width: 1440px) { padding: 40px 180px 0 180px; }
+    @media (min-width: 1920px) { padding: 40px 138px 0 138px; }
   }
+
   &__titel {
-    color: var(--Neutrals-1000, #030527);
+    margin-bottom: 16px;
+    color: $neutral-1000;
     text-align: center;
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 16px;
+    @media (min-width: 1024px) { font-size: 48px; }
+    @media (min-width: 1920px) { margin-bottom: 24px; font-size: 60px; font-weight: 700; }
   }
+
   &__text {
-    color: var(--Neutrals-700, #525b5a);
+    margin-bottom: 40px;
+    color: $neutral-700;
     text-align: center;
     font-family: Inter;
     font-size: 18px;
     line-height: 140%;
-    margin-bottom: 40px;
+    @media (min-width: 1920px) { font-size: 20px; }
   }
+
   &__link {
-    margin: 0 auto 24px auto;
     display: block;
-    border-radius: 30px;
-    border: 1px solid var(--BG-BG-1, #f2f5f7);
-    background: var(--Primary-500, #5abeaf);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01),
-      0 2px 2px 0 rgba(135, 80, 255, 0.06);
-    color: var(--Base-White, #fff);
+    width: fit-content; // Додано для коректного центрування через margin
+    margin: 0 auto 24px auto;
+    padding: 13px 109px;
+    color: $white;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 140%;
-    padding: 13px 109px;
+    background: $primary-500;
+    border: 1px solid $border-white-blue;
+    border-radius: 30px;
+    box-shadow: $shadow-btn;
     transition: all 0.3s ease;
+
     &:hover {
       transform: scale(1.03);
     }
+
+    @media (min-width: 1024px) { width: 149px; padding: 13px 20px; }
+    @media (min-width: 1280px) { margin-bottom: 30px; }
+    @media (min-width: 1440px) { margin-bottom: 22px; }
+    @media (min-width: 1920px) { margin-bottom: 40px; }
   }
+
   &__image {
     width: 327px;
     height: 214px;
     border-radius: 14px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .contents {
-    &__container {
-      width: 928px;
-    }
-    &__block {
-      padding: 20px 16px 0 16px;
-    }
-    &__titel {
-      font-size: 48px;
-    }
-    &__link {
-      padding: 13px 20px;
-      width: 149px;
-    }
-    &__image {
-      width: 895px;
-      height: 100%;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .contents {
-    padding: 40px 0;
-    &__container {
-      width: 1120px;
-    }
-    &__block {
-      padding: 40px 100px 0 100px;
-    }
-    &__link {
-      margin-bottom: 30px;
-    }
-    &__image {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .contents {
-    &__container {
-      width: 1360px;
-    }
-    &__link {
-      margin-bottom: 22px;
-    }
-    &__block {
-      padding: 40px 180px 0 180px;
-    }
-  }
-}
-
-@media (min-width: 1920px) {
-  .contents {
-    padding: 60px 0;
-    &__container {
-      width: 1600px;
-    }
-    &__titel {
-      font-size: 60px;
-      font-weight: 700;
-      margin-bottom: 24px;
-    }
-    &__text{
-      font-size: 20px;
-    }
-    &__link {
-      margin-bottom: 40px;
-    }
-    &__block {
-      padding: 40px 138px 0 138px;
-    }
+    @media (min-width: 1024px) { width: 895px; height: 100%; }
+    @media (min-width: 1280px) { width: 100%; height: 100%; }
   }
 }
