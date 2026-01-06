@@ -4,6 +4,9 @@
 
   &__container {
     width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     @media (min-width: 1024px) { width: 928px; }
     @media (min-width: 1280px) { width: 1120px; }
