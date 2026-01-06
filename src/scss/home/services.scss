@@ -1,424 +1,358 @@
+
 .services {
   padding: 40px 0;
+
+  @media (min-width: 1024px) { padding: 60px 0; }
+  @media (min-width: 1440px) { padding: 80px 0; }
+
   &__container {
-    margin: 0 auto;
     width: 327px;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) { width: 928px; }
+    @media (min-width: 1280px) { width: 1120px; }
+    @media (min-width: 1440px) { width: 1280px; }
+    @media (min-width: 1920px) { width: 1392px; }
   }
+
   &__header {
     margin-bottom: 60px;
   }
+
   &__title {
-    color: var(--Neutrals-1000, #030527);
-    text-align: center;
+    margin: 0 auto 24px auto;
+    color: $neutral-1000;
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
-    margin: 0 auto 24px auto;
-  }
-  &__subtitle {
-    color: var(--Neutrals-900, #0d1525);
     text-align: center;
+
+    @media (min-width: 1024px) {
+      width: 848px;
+      font-size: 48px;
+      line-height: 120%;
+    }
+    @media (min-width: 1920px) {
+      width: 976px;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 103%;
+    }
+  }
+
+  &__subtitle {
+    width: 299px;
+    margin: 0 auto;
+    color: $neutral-900;
     font-family: Inter;
     font-size: 18px;
     line-height: 140%;
-    width: 299px;
-    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 1024px) { width: 564px; }
+    @media (min-width: 1280px) { width: 564px; } // Залишено за контекстом
+    @media (min-width: 1920px) {
+      width: 786px;
+      font-size: 20px;
+    }
   }
+
   &__content-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 360px 268px 268px;
+      grid-template-rows: 184px 184px;
+      grid-template-areas:
+        "imageall blue billing"
+        "imageall pink billing";
+      gap: 16px;
+    }
+    @media (min-width: 1280px) {
+      grid-template-columns: 433.907px 324px 324px;
+      grid-template-rows: 222px 222px;
+      gap: 20px;
+    }
+    @media (min-width: 1440px) {
+      grid-template-columns: 468px 350px 350px;
+      grid-template-rows: 240px 240px;
+    }
+    @media (min-width: 1920px) {
+      grid-template-columns: 548px 384px 384px;
+      gap: 40px;
+    }
   }
+
   &__card-image {
     padding: 35px 89px 46px 16px;
     border-radius: 8px;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    background: linear-gradient($overlay-dark, $overlay-dark),
       url("../image/home-image/services/nurse.jpg") center / cover no-repeat;
+
+    @media (min-width: 1024px) {
+      grid-area: imageall;
+      padding: 38px 107px 43px 10px;
+    }
+    @media (min-width: 1280px) { padding: 40px 116px 31px 24px; }
+    @media (min-width: 1440px) { padding: 40px 128px 40px 24px; }
+    @media (min-width: 1920px) { padding: 40px 150px 40px 28px; }
   }
+
   &__card-image-subtitle {
-    color: var(--Yellow-500, #ffe353);
+    margin-bottom: 16px;
+    color: $yellow-500;
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
     line-height: 140%;
-    margin-bottom: 16px;
+
+    @media (min-width: 1024px) { margin-bottom: 18px; }
+    @media (min-width: 1280px) {
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    @media (min-width: 1440px) { font-size: 20px; margin-bottom: 20px; }
+    @media (min-width: 1920px) { margin-bottom: 16px; }
   }
+
   &__card-image-title {
-    color: var(--Base-White, #fff);
+    margin-bottom: 115px;
+    color: $white;
     font-family: Inter;
     font-size: 20px;
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 115px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 126px;
+      font-size: 24px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 171px;
+      font-size: 30px;
+    }
+    @media (min-width: 1440px) { margin-bottom: 189px; }
+    @media (min-width: 1920px) {
+      width: 370px;
+      margin-bottom: 258px;
+    }
   }
+
   &__card-image-link {
-    color: var(--Base-White, #fff);
-    text-align: center;
+    padding: 9px 8px;
+    border-radius: 20px;
+    border: 0.699px solid $border-light;
+    background: $gradient-white-soft;
+    backdrop-filter: $blur-20;
+    color: $white;
     font-family: Inter;
     font-size: 11.179px;
     font-weight: 500;
     line-height: 140%;
-    padding: 9px 8px;
-    border-radius: 20px;
-    border: 0.699px solid #e9fffc;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    backdrop-filter: blur(20px);
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      padding: 10px;
+      font-size: 12.291px;
+    }
+    @media (min-width: 1280px) {
+      padding: 12px;
+      font-size: 14.834px;
+    }
+    @media (min-width: 1440px) {
+      padding: 13px 12px;
+      font-size: 16px;
+    }
   }
+
   &__card-electronic {
     padding: 24px;
     border-radius: 12px;
-    background: var(--Primary-300, #cff1ec);
+    background: $primary-300;
+
+    @media (min-width: 1024px) {
+      grid-area: blue;
+      padding: 18px;
+    }
+    @media (min-width: 1280px) { padding: 22px 22px 18px 22px; }
+    @media (min-width: 1440px) { padding: 24px; }
+    @media (min-width: 1920px) { padding: 24px 41px; }
   }
+
   &__card-subtitle {
-    color: var(--Neutrals-900, #0d1525);
+    margin-bottom: 58px;
+    color: $neutral-900;
     font-family: Inter;
     font-size: 16px;
     line-height: 140%;
-    margin-bottom: 58px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 58px;
+      font-size: 10px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 54px;
+      font-size: 14px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 58px;
+      font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+      margin-bottom: 52px;
+      font-size: 18px;
+    }
   }
+
   &__card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__card-footer-title {
-    color: var(--Neutrals-900, #0d1525);
+    width: 168px;
+    color: $neutral-900;
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
     line-height: 150%;
-    width: 168px;
-  }
-  &__card-footer-link {
-    border-radius: 30px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    padding: 12px;
-    transition: all 0.3s ease;
-    &:hover {
-      transform: scale(1.25);
+
+    @media (min-width: 1024px) {
+      width: 129.06px;
+      font-size: 24px;
     }
+    @media (min-width: 1280px) {
+      width: 155.762px;
+      font-size: 30px;
+    }
+    @media (min-width: 1440px) { width: 168px; }
   }
+
+  &__card-footer-link {
+    padding: 12px;
+    border-radius: 30px;
+    background: $gradient-white-soft;
+    backdrop-filter: $blur-20;
+    transition: all 0.3s ease;
+
+    &:hover { transform: scale(1.25); }
+
+    @media (min-width: 1024px) { padding: 10px; }
+    @media (min-width: 1280px) { padding: 12px; }
+  }
+
   &__card-footer-svg {
     width: 20px;
     height: 20px;
+
+    @media (min-width: 1024px) { width: 15.364px; height: 15.364px; }
+    @media (min-width: 1280px) { width: 18.543px; height: 18.543px; }
+    @media (min-width: 1440px) { width: 20px; height: 20px; }
   }
+
   &__card-telehealth {
     padding: 24px;
     border-radius: 12px;
-    background: var(--Red-300, #fddbdb);
+    background: $red-300;
+
+    @media (min-width: 1024px) {
+      grid-area: pink;
+      padding: 18px;
+    }
+    @media (min-width: 1280px) { padding: 22px 22px 18px 22px; }
+    @media (min-width: 1440px) { padding: 24px; }
+    @media (min-width: 1920px) { padding: 24px 41px; }
   }
+
   &__card-billing {
-    border-radius: 12px;
-    background: var(--Secondary-400, #1c404c);
     padding: 13px 23px;
+    border-radius: 12px;
+    background: $secondary-400;
+
+    @media (min-width: 1024px) {
+      grid-area: billing;
+      padding: 44px 18px;
+    }
+    @media (min-width: 1280px) { padding: 24px 22px 21px 22px; }
+    @media (min-width: 1440px) { padding: 30px 24px; }
+    @media (min-width: 1920px) { padding: 30px; }
   }
+
   &__card-billing-subtitle {
-    color: var(--Base-White, #fff);
+    width: 282px;
+    margin-bottom: 186px;
+    color: $white;
     font-family: Inter;
     font-size: 16px;
     line-height: 140%;
-    width: 282px;
-    margin-bottom: 186px;
+
+    @media (min-width: 1024px) {
+      width: 231px;
+      margin-bottom: 142px;
+      font-size: 10px;
+    }
+    @media (min-width: 1280px) {
+      width: 279px;
+      margin-bottom: 171px;
+      font-size: 14px;
+    }
+    @media (min-width: 1440px) {
+      width: 302px;
+      margin-bottom: 174px;
+      font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+      width: 320px;
+      margin-bottom: 145px;
+      font-size: 18px;
+    }
   }
+
   &__card-billing-footer-title {
-    color: var(--Base-White, #fff);
+    width: 168px;
+    color: $white;
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
     line-height: 150%;
-    width: 168px;
-  }
-  &__card-billing-footer-link {
-    border-radius: 30px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    backdrop-filter: blur(20px);
-    padding: 12px;
-    transition: all 0.3s ease;
-    &:hover {
-      transform: scale(1.25);
+
+    @media (min-width: 1024px) {
+      width: 129px;
+      font-size: 24px;
     }
+    @media (min-width: 1280px) {
+      width: 155.762px;
+      font-size: 30px;
+    }
+    @media (min-width: 1440px) { width: 168px; }
   }
+
+  &__card-billing-footer-link {
+    padding: 12px;
+    border-radius: 30px;
+    background: $gradient-white-soft;
+    backdrop-filter: $blur-20;
+    transition: all 0.3s ease;
+
+    &:hover { transform: scale(1.25); }
+
+    @media (min-width: 1024px) { padding: 10px; }
+    @media (min-width: 1280px) { padding: 12px; }
+  }
+
   &__card-billing-footer-svg {
     width: 20px;
     height: 20px;
-    fill: var(--Secondary-100, #e8eced);
-  }
-}
+    fill: $secondary-100;
 
-@media (min-width: 1024px) {
-  .services {
-    padding: 60px 0;
-    &__container {
-      width: 928px;
-    }
-    &__title {
-      width: 848px;
-      font-size: 48px;
-      line-height: 120%;
-    }
-    &__subtitle {
-      width: 564px;
-    }
-    &__content-cards {
-      display: grid;
-      grid-template-columns: 360px 268px 268px;
-      grid-template-rows: 184px 184px;
-      gap: 16px;
-      grid-template-areas:
-        "imageall blue billing"
-        "imageall pink billing";
-    }
-    &__card-image {
-      padding: 38px 107px 43px 10px;
-      grid-area: imageall;
-    }
-    &__card-image-subtitle {
-      margin-bottom: 18px;
-    }
-    &__card-image-title {
-      font-size: 24px;
-      margin-bottom: 126px;
-    }
-    &__card-image-link {
-      font-size: 12.291px;
-      padding: 10px;
-    }
-    &__card-electronic {
-      padding: 18px;
-      grid-area: blue;
-    }
-    &__card-subtitle {
-      font-size: 10px;
-      margin-bottom: 58px;
-    }
-    &__card-footer-title {
-      font-size: 24px;
-      line-height: 150%;
-      width: 129.06px;
-    }
-    &__card-footer-link {
-      padding: 10px;
-    }
-    &__card-footer-svg {
-      width: 15.364px;
-      height: 15.364px;
-    }
-    &__card-telehealth {
-      padding: 18px;
-      grid-area: pink;
-    }
-    &__card-billing {
-      padding: 44px 18px;
-      grid-area: billing;
-    }
-    &__card-billing-subtitle {
-      font-size: 10px;
-      width: 231px;
-      margin-bottom: 142px;
-    }
-    &__card-billing-footer-title {
-      font-size: 24px;
-      width: 129px;
-    }
-    &__card-billing-footer-link {
-      padding: 10px;
-    }
-    &__card-billing-footer-svg {
-      width: 15.364px;
-      height: 15.364px;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .services {
-    &__container {
-      width: 1120px;
-    }
-    &__content-cards {
-      grid-template-columns: 433.907px 324px 324px;
-      grid-template-rows: 222px 222px;
-      gap: 20px;
-    }
-    &__card-image {
-      padding: 40px 116px 31px 24px;
-    }
-    &__card-image-subtitle {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-    &__card-image-title {
-      font-size: 30px;
-      margin-bottom: 171px;
-    }
-    &__card-image-link {
-      font-size: 14.834px;
-      padding: 12px;
-    }
-    &__card-electronic {
-      padding: 22px 22px 18px 22px;
-    }
-    &__card-subtitle {
-      font-size: 14px;
-      margin-bottom: 54px;
-    }
-    &__card-footer-title {
-      font-size: 30px;
-      width: 155.762px;
-    }
-    &__card-footer-link {
-      padding: 12px;
-    }
-    &__card-footer-svg {
-      width: 18.543px;
-      height: 18.543px;
-    }
-    &__card-telehealth {
-      padding: 22px 22px 18px 22px;
-    }
-    &__card-billing {
-      padding: 24px 22px 21px 22px;
-    }
-    &__card-billing-subtitle {
-      font-size: 14px;
-      width: 279px;
-      margin-bottom: 171px;
-    }
-    &__card-billing-footer-title {
-      font-size: 30px;
-      width: 155.762px;
-    }
-    &__card-billing-footer-link {
-      padding: 12px;
-    }
-    &__card-billing-footer-svg {
-      width: 18.543px;
-      height: 18.543px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .services {
-    padding: 80px 0;
-    &__container {
-      width: 1280px;
-    }
-    &__content-cards {
-      grid-template-columns: 468px 350px 350px;
-      grid-template-rows: 240px 240px;
-    }
-    &__card-image {
-      padding: 40px 128px 40px 24px;
-    }
-    &__card-image-subtitle {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    &__card-image-title {
-      margin-bottom: 189px;
-    }
-    &__card-image-link {
-      font-size: 16px;
-      padding: 13px 12px;
-    }
-    &__card-electronic {
-      padding: 24px;
-    }
-    &__card-subtitle {
-      font-size: 16px;
-      margin-bottom: 58px;
-    }
-    &__card-footer-title {
-      width: 168px;
-    }
-    &__card-footer-svg {
-      width: 20px;
-      height: 20px;
-    }
-    &__card-telehealth {
-      padding: 24px;
-    }
-    &__card-billing {
-      padding: 30px 24px;
-    }
-    &__card-billing-subtitle {
-      font-size: 16px;
-      width: 302px;
-      margin-bottom: 174px;
-    }
-    &__card-billing-footer-title {
-      width: 168px;
-    }
-    &__card-billing-footer-svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-@media (min-width: 1920px){
-  .services{
-    &__container{
-      width: 1392px;
-    }
-    &__title {
-      width: 976px;
-      font-size: 60px;
-      line-height: 103%;
-      font-weight: 700;
-    }
-    &__subtitle {
-      width: 786px;
-      font-size: 20px;
-    }
-    &__content-cards {
-      grid-template-columns: 548px 384px 384px;
-      gap: 40px;
-    }
-    &__card-image {
-      padding: 40px 150px 40px 28px;
-    }
-    &__card-image-subtitle {
-      margin-bottom: 16px;
-    }
-    &__card-image-title {
-      margin-bottom: 258px;
-      width: 370px;
-    }
-    &__card-electronic {
-      padding: 24px 41px;
-    }
-    &__card-subtitle {
-      font-size: 18px;
-      margin-bottom: 52px;
-    }
-    &__card-telehealth {
-      padding: 24px 41px;
-    }
-    &__card-billing {
-      padding: 30px;
-    }
-    &__card-billing-subtitle {
-      font-size: 18px;
-      width: 320px;
-      margin-bottom: 145px;
-    }
+    @media (min-width: 1024px) { width: 15.364px; height: 15.364px; }
+    @media (min-width: 1280px) { width: 18.543px; height: 18.543px; }
+    @media (min-width: 1440px) { width: 20px; height: 20px; }
   }
 }
