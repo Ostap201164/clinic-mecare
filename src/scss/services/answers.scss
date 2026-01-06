@@ -1,83 +1,105 @@
 .answers {
   padding: 60px 0;
+
   &__container {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 327px;
+    margin: 0 auto;
+    @media (min-width: 1024px) { width: 920px; }
+    @media (min-width: 1280px) { width: 1116px; }
+    @media (min-width: 1440px) { width: 1154px; }
+    @media (min-width: 1920px) { width: 1274px; }
   }
+
   &__header {
     margin-bottom: 60px;
   }
+
   &__title {
-    color: var(--Neutrals-1000, #030527);
+    margin-bottom: 24px;
+    color: $neutral-1000;
     text-align: center;
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 24px;
+    @media (min-width: 1024px) { font-size: 48px; line-height: 120%; }
+    @media (min-width: 1920px) { font-size: 60px; font-weight: 700; }
   }
+
   &__subtitle {
-    color: var(--Neutrals-900, #0d1525);
+    margin: 0 auto;
+    color: $neutral-900;
     text-align: center;
     font-family: Inter;
     font-size: 18px;
     line-height: 140%;
-    margin: 0 auto;
+    @media (min-width: 1920px) { font-size: 20px; }
   }
+
   &__container-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @media (min-width: 1024px) { flex-direction: row; gap: 20px; }
+    @media (min-width: 1920px) { gap: 40px; }
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @media (min-width: 1920px) { gap: 40px; }
   }
+
   &__item {
-    border-radius: 16px;
-    border: 1px solid var(--Neutrals-200, #efefef);
-    background: var(--Base-White, #fff);
-    box-shadow: 0 4px 24px 0 rgba(100, 211, 194, 0.08),
-      0 4px 14px 0 rgba(100, 211, 194, 0.04);
-    padding: 16px 9px;
     position: relative;
-  }
+    padding: 16px 9px;
+    background: $white;
+    border: 1px solid $neutral-200;
+    border-radius: 16px;
+    box-shadow: $shadow-answers;
+    @media (min-width: 1024px) { width: 450px; padding: 16px 10px; }
+    @media (min-width: 1280px) { width: 548px; padding: 16px 12px; }
+    @media (min-width: 1440px) { width: 560px; padding: 16px; }
+    @media (min-width: 1920px) { width: 606px; }
 
-  &__item:focus-within {
-    .answers__content {
-      position: static;
-      width: auto;
-      height: auto;
-      margin-top: 16px;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
+    &:focus-within {
+      .answers__content {
+        position: static;
+        width: auto;
+        height: auto;
+        margin-top: 16px;
+        clip: auto;
+        color: $neutral-700-alt;
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 140%;
+        white-space: normal;
+        overflow: visible;
+      }
 
-      color: var(--Neutrals-700, #4a4f62);
-      font-family: Inter;
-      font-size: 16px;
-      line-height: 140%;
-    }
+      .answers__header-svg-plus {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        overflow: hidden;
+      }
 
-    .answers__header-svg-plus {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-    }
-
-    .answers__header-svg-minus {
-      position: static;
-      width: 24px;
-      height: 24px;
-      margin: 0;
-      overflow: visible;
-      clip: auto;
-      white-space: normal;
+      .answers__header-svg-minus {
+        position: static;
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        clip: auto;
+        white-space: normal;
+        overflow: visible;
+      }
     }
   }
 
@@ -87,104 +109,38 @@
     align-items: center;
     width: 100%;
   }
+
   &__header-text {
-    color: var(--Neutrals-900, #0d1525);
+    color: $neutral-900;
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
     line-height: 140%;
+    @media (min-width: 1920px) { font-size: 20px; }
   }
+
   &__header-svg-plus {
     width: 24px;
     height: 24px;
   }
+
   &__header-svg-minus {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+    overflow: hidden;
   }
+
   &__content {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
-  }
-}
-
-@media (min-width: 1024px) {
-  .answers {
-    &__container {
-      width: 920px;
-    }
-    &__title {
-      font-size: 48px;
-      line-height: 120%;
-    }
-    &__container-list {
-      flex-direction: row;
-      gap: 20px;
-    }
-    &__item {
-      padding: 16px 10px;
-      width: 450px;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .answers {
-    &__container {
-      width: 1116px;
-    }
-    &__item {
-      padding: 16px 12px;
-      width: 548px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .answers {
-    &__container {
-      width: 1154px;
-    }
-    &__item {
-      width: 560px;
-      padding: 16px;
-    }
-  }
-}
-
-@media (min-width: 1920px) {
-  .answers {
-    &__container {
-      width: 1274px;
-    }
-    &__title {
-      font-size: 60px;
-      font-weight: 700;
-    }
-    &__subtitle {
-      font-size: 20px;
-    }
-    &__container-list {
-      gap: 40px;
-    }
-    &__list {
-      gap: 40px;
-    }
-    &__item {
-      width: 606px;
-    }
-    &__header-text {
-      font-size: 20px;
-    }
+    overflow: hidden;
   }
 }
