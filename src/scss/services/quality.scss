@@ -1,150 +1,108 @@
 .quality {
   padding: 40px 0;
+  @media (min-width: 1280px) { padding: 60px 0; }
+
   &__container {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 327px;
-  }
-  &__title {
     margin: 0 auto;
-    color: var(--Neutrals-1000, #030527);
+    @media (min-width: 1024px) { width: 928px; }
+    @media (min-width: 1280px) { width: 1096px; }
+    @media (min-width: 1440px) { width: 1208px; }
+    @media (min-width: 1920px) { width: 1228px; }
+  }
+
+  &__title {
+    margin: 0 auto 60px auto;
+    color: $neutral-1000;
     text-align: center;
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 60px;
+    @media (min-width: 1024px) { font-size: 48px; line-height: 120%; }
+    @media (min-width: 1920px) { font-size: 60px; font-weight: 700; }
   }
+
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 14px;
+    @media (min-width: 1024px) { flex-direction: row; flex-wrap: wrap; }
+    @media (min-width: 1280px) { gap: 20px; }
+    @media (min-width: 1440px) { gap: 40px; }
+    @media (min-width: 1920px) { gap: 50px; }
   }
+
   &__card {
     width: 300px;
-    border-radius: 16px;
-    border: 1px solid var(--Neutrals-200, #efefef);
-    background: var(--Base-White, #fff);
-    box-shadow: 0 4px 24px 0 rgba(100, 211, 194, 0.08),
-      0 4px 14px 0 rgba(100, 211, 194, 0.04);
     padding: 12px 15px;
+    background: $white;
+    border: 1px solid $neutral-200;
+    border-radius: 16px;
+    box-shadow: $shadow-quality;
+    @media (min-width: 1280px) { padding: 16px; }
+    @media (min-width: 1440px) { width: 376px; padding: 20px 28px; }
   }
 
   &__card-images {
     display: flex;
     justify-content: space-between;
   }
+
   &__card-logo {
-    fill: var(--Red-500, #df7e7e);
     width: 71.32px;
     height: 68.132px;
     margin-bottom: 24px;
+    fill: $red-500;
   }
+
   &__card-title {
-    color: var(--Neutrals-900, #0d1525);
+    margin-bottom: 24px;
+    color: $neutral-900;
     font-family: Inter;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
-    margin-bottom: 24px;
   }
+
   &__card-text {
     width: 270px;
-    color: var(--Neutrals-800, #181b39);
+    margin-bottom: 24px;
+    color: $neutral-800;
     font-family: Inter;
     font-size: 14px;
-    line-height: 140%; /* 19.6px */
-    margin-bottom: 24px;
+    line-height: 140%;
   }
+
   &__card-link {
-    transition: all 0.3s ease;
-    &:hover {
-      transform: scale(1.03);
-    }
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    border-radius: 30px;
-    border: 1px solid var(--Red-100, #fef4f4);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.4) 100%
-    );
-    backdrop-filter: blur(20px);
     padding: 13px 12px;
-    color: var(--Neutrals-900, #0d1525);
+    color: $neutral-900;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 140%;
+    background: $gradient-white-alpha;
+    border: 1px solid $red-100;
+    border-radius: 30px;
+    backdrop-filter: $blur-20;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
+
   &__link-svg {
     width: 20px;
     height: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .quality {
-    &__container {
-      width: 928px;
-    }
-    &__title {
-      font-size: 48px;
-      line-height: 120%;
-    }
-    &__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .quality {
-    padding: 60px 0;
-    &__container {
-      width: 1096px;
-    }
-    &__list {
-      gap: 20px;
-    }
-    &__card {
-      padding: 16px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .quality {
-    &__container {
-      width: 1208px;
-    }
-    &__list {
-      gap: 40px;
-    }
-    &__card {
-      width: 376px;
-      padding: 20px 28px;
-    }
-  }
-}
-
-@media (min-width: 1920px) {
-  .quality {
-    &__container {
-      width: 1228px;
-    }
-    &__list {
-      gap: 50px;
-    }
-    &__title {
-      font-size: 60px;
-      font-weight: 700;
-    }
   }
 }
