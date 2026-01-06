@@ -1,3 +1,4 @@
-@use "./contents.scss";
-@use "./quality.scss";
-@use "./answers.scss";
+@import "../universal/colors.scss";
+@import "./contents.scss";
+@import "./quality.scss";
+@import "./answers.scss";
