@@ -21,7 +21,7 @@
     width: 327px;
     height: 211px;
     border-radius: 10px;
-    background: linear-gradient(221deg, var(--Gradient-Start) 0%, var(--Gradient-End) 111.43%);
+    background: linear-gradient(221deg, $gradient-start 0%, $gradient-end 111.43%);
 
     @media (min-width: 1024px) {
       padding: 16px 57px 0 57px;
@@ -83,7 +83,7 @@
   &__feature-svg-blood,
   &__feature-svg-pills,
   &__div-title-svg {
-    background: var(--Base-White);
+    background: $white;
   }
 
   &__feature-svg-blood {
@@ -109,7 +109,7 @@
     font-size: 10px;
     font-weight: 500;
     line-height: 140%;
-    color: var(--Neutrals-800);
+    color: $neutral-800;
 
     @media (min-width: 1024px) { font-family: "Sequel Sans"; font-size: 22px; font-weight: 315; line-height: 150%; }
   }
@@ -135,7 +135,7 @@
     font-family: Inter;
     font-size: 10px;
     line-height: 1.4;
-    color: var(--Neutrals-800);
+    color: $neutral-800;
 
     @media (min-width: 1024px) { top: -350px; width: 240px; font-size: 16px; }
     @media (min-width: 1280px) { width: 355px; font-size: 18px; }
@@ -150,8 +150,8 @@
     font-family: Inter;
     font-size: 12px;
     font-weight: 500;
-    color: var(--Base-White);
-    background: var(--Primary-500);
+    color: $white;
+    background:$primary-500;
     transition: all 0.3s ease;
 
     &:hover { transform: scale(1.05); }
@@ -166,10 +166,10 @@
     padding: 16px;
     border-radius: 10.062px;
     width: 327px;
-    background: var(--Primary-300);
+    background: $Primary-300;
 
-    &:first-child { background: var(--Red-300); }
-    &:last-child { background: var(--Yellow-300); margin-bottom: 0; }
+    &:first-child { background: $Red-300; }
+    &:last-child { background: $Yellow-300; margin-bottom: 0; }
 
     @media (min-width: 1024px) { margin-bottom: 0; }
     @media (min-width: 1280px) { width: 360px; padding: 20px; }
@@ -189,7 +189,7 @@
     font-family: Inter;
     font-size: 16px;
     line-height: 140%;
-    color: var(--Neutrals-700);
+    color: $neutral-700;
     width: 222.71px;
     margin-bottom: 24px;
 
@@ -198,7 +198,7 @@
   }
 
   &__div-title-svg {
-    background: var(--Base-White);
+    background: $white;
     box-shadow: 0 5.996px 51.395px 0 rgba(0, 0, 0, 0.06);
     border-radius: 42.829px;
     width: 51px;
@@ -216,8 +216,8 @@
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
-    color: var(--Base-White);
-    background: var(--Neutrals-900);
+    color: $white;
+    background:$neutral-900;
     transition: all 0.3s ease;
 
     &:hover { transform: scale(1.05); }
