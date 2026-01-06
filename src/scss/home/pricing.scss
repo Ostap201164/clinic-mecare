@@ -112,8 +112,8 @@
   &__card {
     padding: 16px 8px 16px 9px;
     border-radius: 16px;
-    @media (min-width: 1024px) { padding: 40px 37px; }
-    @media (min-width: 1280px) { padding: 38px 45px; }
+    @media (min-width: 1024px) { padding: 40px 37px; width: 445px; }
+    @media (min-width: 1280px) { padding: 38px 45px; width: 538px;}
   }
 
   &__card-light {
@@ -136,7 +136,7 @@
       font-family: Inter;
       font-size: 16px;
       line-height: 140%;
-      @media (min-width: 1024px) { margin-bottom: 44px; font-size: 14px; }
+      @media (min-width: 1024px) { margin-bottom: 44px; font-size: 14px; width: 270px;}
       @media (min-width: 1280px) { margin-bottom: 53px; font-size: 18px; }
     }
 
