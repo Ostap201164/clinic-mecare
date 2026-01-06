@@ -6,9 +6,19 @@
     @media (min-width: 1024px) {
       width: 928px;
     }
+    @media (min-width: 1280px) {
+      width: 1120px;
+    }
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
   }
 
   &__swiper-container {
+    position: relative;
     padding-bottom: 65px;
   }
 
@@ -176,6 +186,10 @@
       @media (min-width: 1440px) {
         right: 64px;
       }
+
+      @media (min-width: 1920px) {
+        right: 264px;
+      }
     }
 
     &_prev {
@@ -186,6 +200,10 @@
       }
       @media (min-width: 1440px) {
         right: 124px;
+      }
+
+      @media (min-width: 1920px) {
+        right: 324px;
       }
     }
 
@@ -208,4 +226,44 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.swiper-pagination-progressbar-fill {
+  border-radius: 10px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 420px !important;
+  top: 430px !important;
+  width: 143px !important;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    left: 540px !important;
+  }
+
+  @media (min-width: 1440px) {
+    left: 490px !important;
+  }
+
+  @media (min-width: 1920px) {
+    left: 400px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 10px;
+  background: #d1fae5;
+  opacity: 1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 60px;
+  border-radius: 999px;
+  background: #5ec4b3;
 }
