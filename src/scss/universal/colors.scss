@@ -1,32 +1,60 @@
-:root {
-  /* Primary colors */
-  --Primary-500: #5abeaf;
-  --Primary-300: #cff1ec;
+/* Primary */
+$primary-500: #5abeaf;
+$primary-100: #f0fbf9;
 
-  /* Red */
-  --Red-300: #fddbdb;
+/* Base */
+$white: #ffffff;
 
-  /* Yellow */
-  --Yellow-300: #fff6ca;
+/* Neutrals */
+$neutral-1000: #030527;
+$neutral-900: #0d1525;
+$neutral-800: #181b39;
+$neutral-700: #525b5a;
+$neutrals-200: #efefef;
 
-  /* Base colors */
-  --Base-White: #fff;
+/* Borders */
+$border-light: #ebebeb;
+/* Primary (missing) */
+$primary-300: #cff1ec;
 
-  /* Neutrals */
-  --Neutrals-900: #0d1525;
-  --Neutrals-800: #181b39;
-  --Neutrals-700: #525b5a;
-  --Neutrals-200: #efefef;
+/* Accent */
+$red-300: #fddbdb;
+$yellow-300: #fff6ca;
 
-  /* Gradient colors */
-  --Gradient-Start: #64d3c2;
-  --Gradient-End: #f0f4da;
+/* Backgrounds */
+$bg-blue: #007ecd;
+$Red-300: #fddbdb;
+$Primary-300: #cff1ec;
+$Yellow-300: #fff6ca;
 
-  /* Analytics specific gradients */
-  --Gradient-Green-Start: #6ad4c3;
-  --Gradient-Green-End: #dcefd6;
+/* Gradients */
+$gradient-start: #64d3c2;
+$gradient-end: #f0f4da;
 
-  /* Blue background */
-  --BG-BG-4: #007ecd;
-}
+/* Borders */
+$border-light: #ebebeb;
 
+/* Accent */
+$red-300: #fddbdb;
+$yellow-300: #fff6ca;
+
+/* Yellow (missing) */
+$yellow-500: #ffe353;
+
+/* Secondary (missing) */
+$secondary-400: #1c404c;
+$secondary-100: #e8eced;
+
+/* Gradients */
+$gradient-white-soft: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.1) 0%,
+  rgba(255, 255, 255, 0.2) 100%
+);
+$blur-20: blur(20px);
+$overlay-dark: rgba(0, 0, 0, 0.45);
+
+$neutral-600: #7c8483;
+$neutral-200: #efefef;
+
+$border-white-blue: #f2f5f7;
