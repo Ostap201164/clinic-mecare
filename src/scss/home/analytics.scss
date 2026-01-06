@@ -3,6 +3,7 @@
 
   &__container {
     width: 327px;
+    align-items: center;
     margin: 0 auto;
 
     @media (min-width: 1024px) { width: 928px; }
@@ -14,7 +15,7 @@
   &__header { margin-bottom: 59px; }
 
   &__title {
-    color: var(--Neutrals-900);
+    color: $neutral-900;
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 32px;
@@ -27,7 +28,7 @@
   }
 
   &__subtitle {
-    color: var(--Neutrals-800);
+    color: $neutral-800;
     text-align: center;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
@@ -75,7 +76,7 @@
 
   &__card--green {
     padding: 20px 9px 20px 8px;
-    background: linear-gradient(180deg, var(--Gradient-Green-Start) 42.63%, var(--Gradient-Green-End) 155.06%);
+    background: linear-gradient(180deg, $gradient-start 42.63%, $gradient-end 155.06%);
 
     @media (min-width: 1024px) { grid-area: green; padding: 24px 20px; }
     @media (min-width: 1280px) { padding: 30px 24px; }
@@ -84,7 +85,7 @@
   }
 
   &__card--blue {
-    background: var(--BG-BG-4);
+    background: $bg-blue;
     padding: 20px 9px 20px 8px;
 
     @media (min-width: 1024px) { grid-area: blue; padding: 16.399px 12.628px 15.058px 13.258px; }
@@ -92,7 +93,7 @@
   }
 
   &__card-title {
-    color: var(--Base-White);
+    color: $white;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -104,7 +105,7 @@
   }
 
   &__card-text {
-    color: var(--Base-White);
+    color: $white;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 140%;
@@ -123,9 +124,9 @@
     gap: 4px;
     padding: 13px 12px;
     border-radius: 30px;
-    border: 1px solid var(--Neutrals-200);
-    background: var(--Base-White);
-    color: var(--Neutrals-900);
+    border: 1px solid $neutrals-200;
+    background: $white;
+    color: $neutral-900;
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 16px;
