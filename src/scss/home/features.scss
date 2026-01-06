@@ -1,134 +1,142 @@
 .features {
   padding: 40px 0;
-  &__container {
-    margin: 0 auto;
-    width: 327px;
+
+  @media (min-width: 1280px) {
+    padding: 80px 0;
   }
+
+  @media (min-width: 1920px) {
+    padding: 80px 0 64px;
+  }
+
+  &__container {
+    width: 327px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      width: 928px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 1112px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
+  }
+
   &__header {
     margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 40px;
+    }
   }
+
   &__title {
-    color: var(--Neutrals-1000, #030527);
+    margin-bottom: 24px;
+
+    color: $neutral-1000;
     text-align: center;
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 24px;
+
+    @media (min-width: 1920px) {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 103%;
+    }
   }
+
   &__subtitle {
-    color: var(--Neutrals-900, #0d1525);
+    width: 327px;
+    margin: 0 auto;
+
+    color: $neutral-900;
     text-align: center;
     font-family: Inter;
     font-size: 18px;
     line-height: 140%;
-    width: 327px;
-    margin: 0 auto;
+    
+    @media (min-width: 1024px) {
+      width: 642px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 20px;
+    }
   }
+
   &__list {
     display: flex;
     gap: 12px;
     margin-bottom: 24px;
     margin-right: calc(50% - 50vw);
     overflow: hidden;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 40px;
+    }
   }
+
   &__li {
-    border-radius: 30px;
-    border: 1px solid #ebebeb;
-    backdrop-filter: blur(20px);
     padding: 16px;
+    border: 1px solid $border-light;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
     line-height: 140%;
     text-align: center;
+
     button {
-      color: var(--Neutrals-900, #0d1525);
-      
+      color: $neutral-900;
     }
   }
+
   &__li_all {
     width: 110px;
-    background: var(--Primary-500, #5abeaf);
+    background: $primary-500;
+
     button {
-      color: var(--Base-White, #fff);
+      color: $white;
     }
   }
+
   &__li_body {
     width: 202px;
   }
-  &__li_diabet {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_heart {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_cancer {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_vitamin {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_women {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_skin {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_liver {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  &__li_ptofile {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
+
+  &__li_diabet,
+  &__li_heart,
+  &__li_cancer,
+  &__li_vitamin,
+  &__li_women,
+  &__li_skin,
+  &__li_liver,
+  &__li_ptofile,
   &__li_function {
     position: absolute;
     width: 1px;
@@ -139,251 +147,247 @@
     white-space: nowrap;
   }
 
-  &__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  &__card {
-    padding: 20px;
-    width: 327px;
-    height: 316px;
-    border-radius: 12px;
-    background: var(--Primary-100, #f0fbf9);
-  }
-  &__card-svg {
-    width: 48px;
-    height: 47.995px;
-    margin-bottom: 23px;
-  }
-  &__card-title {
-    color: var(--Neutrals-900, #0d1525);
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 20px;
-  }
-  &__card-subtitle {
-    color: var(--Neutrals-700, #525b5a);
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 140%;
-    margin-bottom: 52px;
-  }
-  &__card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__price {
-    color: var(--Neutrals-800, #181b39);
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 140%;
-  }
-  &__card-btn {
-    border-radius: 30px;
-    background: var(--Primary-500, #5abeaf);
-    backdrop-filter: blur(20px);
-    color: var(--Base-White, #fff);
-    text-align: center;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 140%;
-    padding: 8px 16px 7px 16px;
-    transition: all 0.3s ease;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .features {
-    &__container {
-      width: 928px;
-    }
-    &__header {
-      margin-bottom: 40px;
-    }
-    &__list {
-      margin-bottom: 40px;
-    }
-    &__li_diabet {
+  &__li_diabet {
+    @media (min-width: 1024px) {
       position: static;
       width: 117px;
       height: auto;
       margin: 0;
     }
-    &__li_heart {
+  }
+
+  &__li_heart {
+    @media (min-width: 1024px) {
       position: static;
       width: 89px;
       height: auto;
       margin: 0;
     }
-    &__li_cancer {
+  }
+
+  &__li_cancer {
+    @media (min-width: 1024px) {
       position: static;
       width: 102px;
       height: auto;
       margin: 0;
     }
-    &__li_vitamin {
+  }
+
+  &__li_vitamin {
+    @media (min-width: 1024px) {
       position: static;
       width: 106px;
       height: auto;
       margin: 0;
     }
-    &__li_women {
+  }
+
+  &__li_women {
+    @media (min-width: 1024px) {
       position: static;
       width: 166px;
       height: auto;
       margin: 0;
     }
-
-    &__cards {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-    }
-    &__card {
-      padding: 20px 10px;
-      width: 298px;
-      height: 270px;
-    }
-    &__card-svg {
-      width: 39.771px;
-      height: 39.771px;
-      margin-bottom: 19px;
-    }
-    &__card-title {
-      width: 270.4px;
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
-    &__card-subtitle {
-      font-size: 15px;
-      margin-bottom: 48px;
-    }
-    &__price {
-      font-size: 16px;
-    }
-    &__card-btn {
-      border-radius: 24px;
-      font-size: 15px;
-      padding: 6px 13.257px 6px 13.257px;
-    }
   }
-}
 
-@media (min-width: 1280px) {
-  .features {
-    padding: 80px 0;
-    &__container {
-      width: 1112px;
-    }
-    &__header {
-      margin-bottom: 58px;
-    }
-    &__li_skin {
+  &__li_skin {
+    @media (min-width: 1280px) {
       position: static;
       width: 120px;
       height: auto;
       margin: 0;
     }
-    &__li_liver {
+  }
+
+  &__li_liver {
+    @media (min-width: 1280px) {
       position: static;
       width: 82px;
       height: auto;
       margin: 0;
     }
-    &__cards {
-      gap: 20px;
-    }
-    &__card {
-      width: 360px;
-      height: 326px;
-      padding: 25px 12px;
-    }
-    &__card-svg {
-      width: 48px;
-      height: 47.995px;
-      margin-bottom: 23px;
-    }
-    &__card-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-    &__card-subtitle {
-      font-size: 18px;
-      margin-bottom: 52px;
-    }
-    &__price {
-      font-size: 20px;
-    }
-    &__card-btn {
-      font-size: 18px;
-      padding: 8px 16px 7px 16px;
-    }
   }
-}
 
-@media (min-width: 1440px) {
-  .features {
-    &__container {
-      width: 1280px;
-    }
-    &__cards {
-      gap: 40px;
-    }
-    &__card {
-      width: 376px;
-      height: 326px;
-      padding: 30px 22px 20px 20px;
-    }
-  }
-}
-
-@media (min-width: 1920px) {
-  .features {
-    padding: 80px 0 64px 0;
-    &__container {
-      width: 1392px;
-    }
-    &__header {
-      margin-bottom: 40px;
-    }
-    &__title {
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 103%;
-      margin-bottom: 24px;
-    }
-    &__subtitle {
-      font-size: 20px;
-    }
-    &__list {
-      margin-bottom: 40px;
-    }
-    &__li_ptofile {
+  &__li_ptofile {
+    @media (min-width: 1920px) {
       position: static;
       width: 166px;
       height: auto;
       margin: 0;
     }
-    &__li_function {
+  }
+
+  &__li_function {
+    @media (min-width: 1920px) {
       position: static;
       width: 179px;
       height: auto;
       margin: 0;
     }
-    &__card{
-      padding: 35px 51px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      gap: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 40px;
+    }
+  }
+
+  &__card {
+    width: 327px;
+    height: 316px;
+    padding: 20px;
+    border-radius: 12px;
+    background: $primary-100;
+
+    @media (min-width: 1024px) {
+      width: 298px;
+      height: 270px;
+      padding: 20px 10px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 360px;
+      height: 326px;
+      padding: 25px 12px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 376px;
+      padding: 30px 22px 20px 20px;
+    }
+
+    @media (min-width: 1920px) {
       width: 438px;
       height: 347px;
+      padding: 35px 51px;
+    }
+  }
+
+  &__card-svg {
+    width: 48px;
+    height: 47.995px;
+    margin-bottom: 23px;
+
+    @media (min-width: 1024px) {
+      width: 39.771px;
+      height: 39.771px;
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 48px;
+      height: 47.995px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 20px;
+
+    color: $neutral-900;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 270px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card-subtitle {
+    margin-bottom: 52px;
+
+    color: $neutral-700;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 15px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 18px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    color: $neutral-800;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+
+  &__card-btn {
+    padding: 8px 16px 7px;
+    border-radius: 30px;
+    background: $primary-500;
+    backdrop-filter: blur(20px);
+
+    color: $white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      padding: 6px 13.257px;
+      font-size: 15px;
+      border-radius: 24px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 8px 16px 7px;
+      font-size: 18px;
+      border-radius: 30px;
     }
   }
 }
