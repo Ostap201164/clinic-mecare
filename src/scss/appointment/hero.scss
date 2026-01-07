@@ -1,0 +1,218 @@
+
+.appointment {
+    padding: 40px 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+}
+
+.appointment__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.appointment__intro {
+    order: 1;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.appointment__form-card {
+    order: 2;
+    margin-bottom: 48px;
+    background: #FFFFFF;
+    border: 1px solid #F3F4F6;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.appointment__benefits {
+    order: 3;
+}
+
+
+.appointment__title {
+    color: #0D1525;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.appointment__subtitle {
+    color: #4B5563;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form__input {
+    padding: 12px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+.form__radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form__radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form__radio-box {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.form__radio input:checked + .form__radio-box {
+    background-color: #141B34;
+    border: 1px solid #141B34;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__submit {
+    background: #5ABEAF;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form__submit:hover {
+    background: #49a89a;
+}
+
+/* Переваги */
+.benefit {
+    margin-bottom: 24px;
+}
+
+.benefit__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.benefit__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.benefit__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #141B34;
+}
+
+.benefit__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #181B39;
+}
+
+.benefit__text {
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 1.5;
+    padding-left: 36px;
+}
+
+/* --- DESKTOP (1024px+) --- */
+@media (min-width: 1024px) {
+    .appointment__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "intro form"
+            "benefits form";
+        gap: 0 80px;
+        align-items: start;
+        padding: 60px 0;
+    }
+
+    .appointment__intro {
+        grid-area: intro;
+        text-align: left;
+        order: unset;
+    }
+
+    .appointment__benefits {
+        grid-area: benefits;
+        order: unset;
+    }
+
+    .appointment__form-card {
+        grid-area: form;
+        order: unset;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+
+    .appointment__title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .form__row {
+        flex-direction: row;
+    }
+}

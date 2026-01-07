@@ -1,0 +1,113 @@
+/* Контейнер */
+.blog-header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 16px;
+    text-align: center;
+}
+
+.blog-header__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.blog-header__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 20px;
+}
+
+.blog-header__subtitle {
+    font-size: 18px;
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Стилізація підписки (Інпут + Кнопка) */
+.subscribe-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 8px 8px 8px 16px;
+    transition: border-color 0.3s;
+}
+
+.subscribe-input:focus-within {
+    border-color: #4B5563; /* Твій сірий колір при фокусі */
+}
+
+.subscribe-input__icon {
+    width: 20px;
+    height: 20px;
+    fill: #9CA3AF;
+    margin-right: 12px;
+}
+
+.subscribe-input__field {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #374151;
+}
+
+.subscribe-input__btn {
+    background: #5ABEAF;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-input__btn:hover {
+    background: #49a89a;
+}
+
+/* Картки блогу (коротко) */
+.blog-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #F3F4F6;
+    margin-bottom: 30px;
+}
+
+.blog-card__tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #ECFDF5;
+    color: #059669;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.blog-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.4;
+}
+
+.blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.blog-card__author-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
