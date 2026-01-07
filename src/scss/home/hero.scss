@@ -1,3 +1,5 @@
+@use "../universal/colors.scss" as *;
+
 .hero {
   padding: 20px 0 40px 0;
 
@@ -8,10 +10,18 @@
     margin: 0 auto;
     width: 327px;
 
-    @media (min-width: 1024px) { width: 928px; }
-    @media (min-width: 1280px) { width: 1112px; }
-    @media (min-width: 1440px) { width: 1280px; }
-    @media (min-width: 1920px) { width: 1392px; }
+    @media (min-width: 1024px) {
+      width: 928px;
+    }
+    @media (min-width: 1280px) {
+      width: 1112px;
+    }
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
   }
 
   &__main-card {
@@ -23,7 +33,11 @@
     width: 327px;
     height: 211px;
     border-radius: 10px;
-    background: linear-gradient(221deg, $gradient-start 0%, $gradient-end 111.43%);
+    background: linear-gradient(
+      221deg,
+      $gradient-start 0%,
+      $gradient-end 111.43%
+    );
 
     @media (min-width: 1024px) {
       padding: 16px 57px 0 57px;
@@ -59,9 +73,20 @@
       height: 54px;
       margin-bottom: 82px;
     }
-    @media (min-width: 1280px) { width: 1055.412px; height: 70px; }
-    @media (min-width: 1440px) { width: 1111.523px; height: 73.722px; margin-bottom: 48px; }
-    @media (min-width: 1920px) { width: 1206.185px; height: 80px; margin-bottom: 53px; }
+    @media (min-width: 1280px) {
+      width: 1055.412px;
+      height: 70px;
+    }
+    @media (min-width: 1440px) {
+      width: 1111.523px;
+      height: 73.722px;
+      margin-bottom: 48px;
+    }
+    @media (min-width: 1920px) {
+      width: 1206.185px;
+      height: 80px;
+      margin-bottom: 53px;
+    }
   }
 
   &__features {
@@ -94,7 +119,12 @@
     padding: 2.435px 2.029px;
     border-radius: 8.522px;
 
-    @media (min-width: 1024px) { width: 42px; height: 42px; padding: 6px 5px; border-radius: 21px; }
+    @media (min-width: 1024px) {
+      width: 42px;
+      height: 42px;
+      padding: 6px 5px;
+      border-radius: 21px;
+    }
   }
 
   &__feature-svg-pills {
@@ -103,7 +133,12 @@
     padding: 2.337px 1.947px;
     border-radius: 8.178px;
 
-    @media (min-width: 1024px) { width: 42px; height: 42px; padding: 6px 5px; border-radius: 21px; }
+    @media (min-width: 1024px) {
+      width: 42px;
+      height: 42px;
+      padding: 6px 5px;
+      border-radius: 21px;
+    }
   }
 
   &__feature-text {
@@ -113,7 +148,12 @@
     line-height: 140%;
     color: $neutral-800;
 
-    @media (min-width: 1024px) { font-family: "Sequel Sans"; font-size: 22px; font-weight: 315; line-height: 150%; }
+    @media (min-width: 1024px) {
+      font-family: "Sequel Sans";
+      font-size: 22px;
+      font-weight: 315;
+      line-height: 150%;
+    }
   }
 
   &__main-image-doctor {
@@ -123,10 +163,27 @@
     left: 180px;
     top: -50px;
 
-    @media (min-width: 1024px) { width: 362px; height: 422px; left: 210px; top: -188px; }
-    @media (min-width: 1280px) { width: 446px; height: 446px; left: 300px; top: -200px; }
-    @media (min-width: 1440px) { left: 350px; }
-    @media (min-width: 1920px) { width: 379px; height: 452px; left: 400px; top: -200px; }
+    @media (min-width: 1024px) {
+      width: 362px;
+      height: 422px;
+      left: 210px;
+      top: -188px;
+    }
+    @media (min-width: 1280px) {
+      width: 446px;
+      height: 446px;
+      left: 300px;
+      top: -200px;
+    }
+    @media (min-width: 1440px) {
+      left: 350px;
+    }
+    @media (min-width: 1920px) {
+      width: 379px;
+      height: 452px;
+      left: 400px;
+      top: -200px;
+    }
   }
 
   &__main-text {
@@ -139,9 +196,18 @@
     line-height: 1.4;
     color: $neutral-800;
 
-    @media (min-width: 1024px) { top: -350px; width: 240px; font-size: 16px; }
-    @media (min-width: 1280px) { width: 355px; font-size: 18px; }
-    @media (min-width: 1920px) { top: -360px; }
+    @media (min-width: 1024px) {
+      top: -350px;
+      width: 240px;
+      font-size: 16px;
+    }
+    @media (min-width: 1280px) {
+      width: 355px;
+      font-size: 18px;
+    }
+    @media (min-width: 1920px) {
+      top: -360px;
+    }
   }
 
   &__main-btn {
@@ -153,14 +219,28 @@
     font-size: 12px;
     font-weight: 500;
     color: $white;
-    background:$primary-500;
+    background: $primary-500;
     transition: all 0.3s ease;
 
-    &:hover { transform: scale(1.05); }
+    &:hover {
+      transform: scale(1.05);
+    }
 
-    @media (min-width: 1024px) { top: -350px; left: 600px; padding: 13px 20px; font-size: 16px; }
-    @media (min-width: 1280px) { top: -350px; left: 800px; padding: 13px 20px; font-size: 16px; }
-    @media (min-width: 1920px) { top: -370px; }
+    @media (min-width: 1024px) {
+      top: -350px;
+      left: 600px;
+      padding: 13px 20px;
+      font-size: 16px;
+    }
+    @media (min-width: 1280px) {
+      top: -350px;
+      left: 800px;
+      padding: 13px 20px;
+      font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+      top: -370px;
+    }
   }
 
   &__card {
@@ -170,13 +250,28 @@
     width: 327px;
     background: $Primary-300;
 
-    &:first-child { background: $Red-300; }
-    &:last-child { background: $Yellow-300; margin-bottom: 0; }
+    &:first-child {
+      background: $Red-300;
+    }
+    &:last-child {
+      background: $Yellow-300;
+      margin-bottom: 0;
+    }
 
-    @media (min-width: 1024px) { margin-bottom: 0; }
-    @media (min-width: 1280px) { width: 360px; padding: 20px; }
-    @media (min-width: 1440px) { width: 388px; }
-    @media (min-width: 1920px) { width: 437px; padding: 31px 48px; }
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 1280px) {
+      width: 360px;
+      padding: 20px;
+    }
+    @media (min-width: 1440px) {
+      width: 388px;
+    }
+    @media (min-width: 1920px) {
+      width: 437px;
+      padding: 31px 48px;
+    }
   }
 
   &__card-div-titel {
@@ -184,7 +279,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    @media (min-width: 1280px) { margin-bottom: 12px; }
+    @media (min-width: 1280px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__card-text {
@@ -195,8 +292,13 @@
     width: 222.71px;
     margin-bottom: 24px;
 
-    @media (min-width: 1024px) { width: 215.429px; font-size: 14px; }
-    @media (min-width: 1280px) { margin-bottom: 30px; }
+    @media (min-width: 1024px) {
+      width: 215.429px;
+      font-size: 14px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__div-title-svg {
@@ -219,25 +321,44 @@
     font-size: 14px;
     font-weight: 500;
     color: $white;
-    background:$neutral-900;
+    background: $neutral-900;
     transition: all 0.3s ease;
 
-    &:hover { transform: scale(1.05); }
+    &:hover {
+      transform: scale(1.05);
+    }
 
-    @media (min-width: 1024px) { padding: 10px 31px; border-radius: 24px; }
-    @media (min-width: 1920px) { padding: 13px 48px; }
+    @media (min-width: 1024px) {
+      padding: 10px 31px;
+      border-radius: 24px;
+    }
+    @media (min-width: 1920px) {
+      padding: 13px 48px;
+    }
   }
 
   &__card-svg {
     width: 17.132px;
     height: 17.132px;
-    @media (min-width: 1024px) { width: 16px; height: 16px; }
+    @media (min-width: 1024px) {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &__cards {
-    @media (min-width: 1024px) { display: flex; gap: 16px; }
-    @media (min-width: 1280px) { gap: 20px; }
-    @media (min-width: 1440px) { gap: 23px; }
-    @media (min-width: 1920px) { gap: 40px; }
+    @media (min-width: 1024px) {
+      display: flex;
+      gap: 16px;
+    }
+    @media (min-width: 1280px) {
+      gap: 20px;
+    }
+    @media (min-width: 1440px) {
+      gap: 23px;
+    }
+    @media (min-width: 1920px) {
+      gap: 40px;
+    }
   }
 }
