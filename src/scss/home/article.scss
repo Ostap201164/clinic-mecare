@@ -1,0 +1,158 @@
+@use "../universal/colors.scss" as *;
+
+.article {
+  padding: 40px 0;
+  @media (min-width: 1920px) { padding: 80px 0; }
+
+  &__container {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    @media (min-width: 1024px) { width: 928px; }
+    @media (min-width: 1280px) { width: 1120px; }
+    @media (min-width: 1440px) { width: 1280px; }
+    @media (min-width: 1920px) { width: 1392px; }
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: $neutral-1000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    @media (min-width: 1024px) { font-size: 48px; line-height: 120%; }
+    @media (min-width: 1920px) { font-size: 60px; font-weight: 700; }
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    color: $neutral-900;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    @media (min-width: 1440px) { font-size: 20px; }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 40px;
+    @media (min-width: 1024px) { flex-direction: row; gap: 26px; }
+    @media (min-width: 1280px) { gap: 28px; }
+    @media (min-width: 1920px) { gap: 40px; }
+  }
+
+  &__card {
+    padding-bottom: 24px;
+    background: $white;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.04);
+    @media (min-width: 1024px) { padding-bottom: 20px; }
+    @media (min-width: 1280px) { padding-bottom: 24px; }
+  }
+
+  &__card-img {
+    width: 327px;
+    height: 220px;
+    margin-bottom: 16px;
+    border-radius: 12px 12px 0 0;
+    @media (min-width: 1024px) { width: 292px; height: 182.286px; margin-bottom: 14px; border-radius: 9.943px 9.943px 0 0; }
+    @media (min-width: 1280px) { width: 352px; height: 220px; margin-bottom: 16px; border-radius: 12px 12px 0 0; }
+    @media (min-width: 1440px) { width: 384px; }
+  }
+
+  &__card-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    @media (min-width: 1024px) { gap: 5px; margin-bottom: 14px; }
+    @media (min-width: 1280px) { gap: 6px; margin-bottom: 16px; }
+  }
+
+  &__card-svg {
+    width: 18px;
+    height: 18px;
+    padding: 0.938px 2.438px;
+    @media (min-width: 1024px) { width: 14px; height: 14px; padding: 0.73px 1.896px; }
+    @media (min-width: 1280px) { width: 18px; height: 18px; padding: 0.938px 2.438px; }
+  }
+
+  &__card-control-text {
+    color: $neutral-900;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 140%;
+    @media (min-width: 1024px) { font-size: 12px; }
+    @media (min-width: 1280px) { font-size: 14px; }
+  }
+
+  &__card-title {
+    margin-bottom: 16px;
+    color: $neutral-800;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    @media (min-width: 1024px) { width: 285px; margin-bottom: 14px; }
+    @media (min-width: 1280px) { width: 330px; margin-bottom: 16px; font-size: 24px; }
+  }
+
+  &__card-text {
+    display: -webkit-box;
+    width: 317px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    color: $neutral-600;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 140%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    @media (min-width: 1024px) { width: 285px; margin-bottom: 14px; font-size: 12px; }
+    @media (min-width: 1280px) { width: auto; margin-bottom: 16px; font-size: 14px; }
+  }
+
+  &__card-date {
+    color: $neutral-700;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    @media (min-width: 1024px) { font-size: 14px; }
+    @media (min-width: 1280px) { font-size: 16px; }
+  }
+
+  &__btn {
+    display: block;
+    padding: 13px 117px 13px 116px;
+    margin: 0 auto;
+    color: $white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    background: $primary-500;
+    border: 1px solid $border-white-blue;
+    border-radius: 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01), 0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) { padding: 13px 20px; }
+  }
+}

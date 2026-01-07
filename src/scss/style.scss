@@ -1,2 +1,6 @@
+@use "./universal/colors.scss";
+@use "./universal/reset.scss";
+@use "./universal/font.scss";
+@use "./home/home.scss";
 @import "./header.scss";
-@import './reset.scss';
+
