@@ -1,0 +1,397 @@
+@use "../universal/colors.scss" as *;
+
+.features {
+  padding: 40px 0;
+
+  @media (min-width: 1280px) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 80px 0 64px;
+  }
+
+  &__container {
+    width: 327px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      width: 928px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 1112px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    color: $neutral-1000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+
+    @media (min-width: 1920px) {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 103%;
+    }
+  }
+
+  &__subtitle {
+    width: 327px;
+    margin: 0 auto;
+
+    color: $neutral-900;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 140%;
+    
+    @media (min-width: 1024px) {
+      width: 642px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__li {
+    padding: 16px;
+    border: 1px solid $border-light;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+
+    button {
+      color: $neutral-900;
+    }
+  }
+
+  &__li_all {
+    width: 110px;
+    background: $primary-500;
+
+    button {
+      color: $white;
+    }
+  }
+
+  &__li_body {
+    width: 202px;
+  }
+
+  &__li_diabet,
+  &__li_heart,
+  &__li_cancer,
+  &__li_vitamin,
+  &__li_women,
+  &__li_skin,
+  &__li_liver,
+  &__li_ptofile,
+  &__li_function {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  &__li_diabet {
+    @media (min-width: 1024px) {
+      position: static;
+      width: 117px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_heart {
+    @media (min-width: 1024px) {
+      position: static;
+      width: 89px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_cancer {
+    @media (min-width: 1024px) {
+      position: static;
+      width: 102px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_vitamin {
+    @media (min-width: 1024px) {
+      position: static;
+      width: 106px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_women {
+    @media (min-width: 1024px) {
+      position: static;
+      width: 166px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_skin {
+    @media (min-width: 1280px) {
+      position: static;
+      width: 120px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_liver {
+    @media (min-width: 1280px) {
+      position: static;
+      width: 82px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_ptofile {
+    @media (min-width: 1920px) {
+      position: static;
+      width: 166px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__li_function {
+    @media (min-width: 1920px) {
+      position: static;
+      width: 179px;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      gap: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 40px;
+    }
+  }
+
+  &__card {
+    width: 327px;
+    height: 316px;
+    padding: 20px;
+    border-radius: 12px;
+    background: $primary-100;
+
+    @media (min-width: 1024px) {
+      width: 298px;
+      height: 270px;
+      padding: 20px 10px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 360px;
+      height: 326px;
+      padding: 25px 12px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 376px;
+      padding: 30px 22px 20px 20px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 438px;
+      height: 347px;
+      padding: 35px 51px;
+    }
+  }
+
+  &__card-svg {
+    width: 48px;
+    height: 47.995px;
+    margin-bottom: 23px;
+
+    @media (min-width: 1024px) {
+      width: 39.771px;
+      height: 39.771px;
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 48px;
+      height: 47.995px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 20px;
+
+    color: $neutral-900;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 270px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card-subtitle {
+    margin-bottom: 52px;
+
+    color: $neutral-700;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 15px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 18px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    color: $neutral-800;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+
+  &__card-btn {
+    padding: 8px 16px 7px;
+    border-radius: 30px;
+    background: $primary-500;
+    backdrop-filter: blur(20px);
+
+    color: $white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      padding: 6px 13.257px;
+      font-size: 15px;
+      border-radius: 24px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 8px 16px 7px;
+      font-size: 18px;
+      border-radius: 30px;
+    }
+  }
+}
