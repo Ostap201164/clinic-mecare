@@ -1,4 +1,4 @@
-export function swiper() {
+export function swiper1() {
   new Swiper(".designed-for__swiper-container", {
     navigation: {
       nextEl: ".designed-for__swiper-button_next",
@@ -26,5 +26,18 @@ export function swiper() {
         slidesPerView: 5.6,
       },
     },
+  });
+}
+
+export function swiper2() {
+  new Swiper(".reviews__swiper-container", {
+    navigation: {
+      nextEl: ".reviews__swiper-button_next",
+      prevEl: ".reviews__swiper-button_prev",
+    },
+
+    autoHeight: false,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
   });
 }
