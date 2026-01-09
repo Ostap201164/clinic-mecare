@@ -1,632 +1,305 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <title>Vite App</title>
-  <script type="module" crossorigin src="/clinic-mecare/assets/main-BtcSJtUE.js"></script>
-  <link rel="stylesheet" crossorigin href="/clinic-mecare/assets/main-Cdbv4qS2.css">
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__container">
-        <a href="#" class="header__logo">
-            <svg class="header__logo-svg">
-            <use href="../img/header/header.svg#icon-medical-logo"></use>
-            </svg>
-            <p class="header__logo-name">Mecare</p>
-        </a>
-        <nav class="nav">
-            <a class="nav__item" href="#">Home</a>
-            <a class="nav__item" href="#">Service</a>
-            <a class="nav__item" href="#">Doctors</a>
-            <a class="nav__item" href="#">Pricing</a>
-        </nav>
-        <div class="header__links">
-            <button class="header__link-join">Join Doctor</button>
-            <button class="header__link-get">Get Appointment</button>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/clinic-mecare/assets/main-D6CH4Jvv.js"></script>
+    <link rel="stylesheet" crossorigin href="/clinic-mecare/assets/main-ClfU3Qxf.css">
+  </head>
+  <body>
+    <section class="contents">
+    <div class="contents__container">
+        <div class="contents__block">
+        <h2 class="contents__titel">Discover Our Complete Range of Services</h2>
+        <p class="contents__text">Explore the comprehensive suite of services we provide, t designed to address of your healthcare needs.</p>
+        <a class="contents__link" href="#">Explore More</a>
+        <img class="contents__image" src="../../image/services/contents/hand.jpg" alt="hands">
         </div>
-        <button class="header__btn-burger">
-        <svg class="header__burger-svg">
-            <use href="../img/header/header.svg#icon-burger"></use>
-        </svg>
-        </button>
     </div>
-</header>
-  <section class="hero">
-  <div class="hero__container">
-    <div class="hero__main-card">
-      <svg class="hero__main-svg">
-        <use
-          href="../image/home-image/hero/hero.svg#icon-Excellence-Healthcare"
-        ></use>
-      </svg>
-      <div class="hero__features">
-        <div class="hero__feature">
-          <svg class="hero__feature-svg-blood">
-            <use href="../image/home-image/hero/hero.svg#icon-blood"></use>
-          </svg>
-          <p class="hero__feature-text">Reduce HbA1c</p>
-        </div>
-
-        <div class="hero__feature">
-          <svg class="hero__feature-svg-pills">
-            <use href="../image/home-image/hero/hero.svg#icon-pills"></use>
-          </svg>
-          <p class="hero__feature-text">No more medications</p>
-        </div>
-      </div>
-      <img
-        class="hero__main-image-doctor"
-        src="../../image/home-image/hero/doctor.png"
-        alt="doctor"
-      />
-      <p class="hero__main-text">
-        Prioritizing your well-being with top-tier medical expertise and
-        compassionate care tailored to your needs
-      </p>
-      <button class="hero__main-btn">Schedule An Appointment</button>
-    </div>
-    <div class="hero__cards">
-      <div class="hero__card">
-        <div class="hero__card-div-titel">
-          <h3>Qualified Doctors</h3>
-          <svg class="hero__div-title-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-doctor"></use>
-          </svg>
-        </div>
-        <p class="hero__card-text">
-          Schedule your appointment with your health consultation with the best
-          doctors in medicare
-        </p>
-        <a class="hero__card-link" href="#"
-          >Scheduling an Appointment
-          <svg class="hero__card-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-Right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="hero__card">
-        <div class="hero__card-div-titel">
-          <h3>Consultation</h3>
-          <svg class="hero__div-title-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-heart"></use>
-          </svg>
-        </div>
-        <p class="hero__card-text">
-          Schedule your appointment with your health consultation with the best
-          doctors in medicare
-        </p>
-        <a class="hero__card-link" href="#"
-          >Scheduling an Appointment
-          <svg class="hero__card-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-Right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="hero__card">
-        <div class="hero__card-div-titel">
-          <h3>24/7 Support</h3>
-          <svg class="hero__div-title-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-gamer"></use>
-          </svg>
-        </div>
-        <p class="hero__card-text">
-          Schedule your appointment with your health consultation with the best
-          doctors in medicare
-        </p>
-        <a class="hero__card-link" href="#"
-          >Scheduling an Appointment
-          <svg class="hero__card-svg">
-            <use href="../image/home-image/hero/hero.svg#icon-Right"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
 </section>
-
-  <section class="analytics">
-  <div class="analytics__container">
-    <div class="analytics__header">
-      <h2 class="analytics__title">Our health analytics solutions</h2>
-      <p class="analytics__subtitle">
-        Our platform streamlines expense management here’s why it’s essential
-        for your business finances.
-      </p>
-    </div>
-
-    <div class="analytics__grid">
-      <!-- GREEN -->
-      <div class="analytics__card analytics__card--green">
-        <h3 class="analytics__card-title">Analytics & Risk Stratification</h3>
-        <p class="analytics__card-text">
-          Data to predict potential health issues and categorize patients based
-          on their risk factors. It emphasizes proactive healthcare and resource
-          collocation. categorize patients based on their risk factors.
-        </p>
-        <a href="#" class="analytics__btn">
-          Learn More
-          <svg class="analytics__btn-svg">
+    <section class="quality">
+  <div class="quality__container">
+    <h2 class="quality__title">Comprehensive quality care you need</h2>
+    <ul class="quality__list">
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Cardiology"
+          ></use>
+        </svg>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
+        </div>
+        <h3 class="quality__card-title">Cardiology</h3>
+        <p class="quality__card-text">Cardiology specializes in heart care, using advanced technology to diagnose, treat, and prevent heart conditions.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
             <use
-              href="../image/home-image/analytics/analytics.svg#icon-Right-Up"
+              href="../image/services/quality/quality.svg#icon-Right-Up"
             ></use>
           </svg>
         </a>
-      </div>
-
-      <div class="analytics__card analytics__card--image-top"></div>
-
-      <div class="analytics__card analytics__card--image-bottom-first">
-        <!-- <img src="../image/home-image/analytics/analytics-instrument.jpg" alt="Medical analytics"/> -->
-      </div>
-
-      <div class="analytics__card analytics__card--blue">
-        <h3 class="analytics__card-title">Cost Optimization</h3>
-        <p class="analytics__card-text">
-          This service focuses on using analytics to improve the quality of care
-          and identify areas for reduction. It appeals to healthcare provider
-          seeking.
-        </p>
-        <a href="#" class="analytics__btn">
-          Learn More
-          <svg class="analytics__btn-svg">
+      </li>
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Orthopedics"
+          ></use>
+        </svg>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
+        </div>
+        <h3 class="quality__card-title">Endocrinology</h3>
+        <p class="quality__card-text">Endocrinology treats hormone disorders like diabetes and thyroid issues with expert, personalized care.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
             <use
-              href="../image/home-image/analytics/analytics.svg#icon-Right-Up"
+              href="../image/services/quality/quality.svg#icon-Right-Up"
             ></use>
           </svg>
         </a>
-      </div>
-
-      <div class="analytics__card analytics__card--image-bottom-second">
-        <!-- <img src="../image/home-image/analytics/analytics-hand.jpg" alt="Healthcare data"/> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="features">
-  <div class="features__container">
-    <div class="features__header">
-      <h2 class="features__title">Exclusive Health Check-up Packages</h2>
-      <p class="features__subtitle">
-        Discover our Exclusive Health Check-up Packages, designed to provide
-        comprehensive tailored to your unique health needs.
-      </p>
-    </div>
-    <ul class="features__list">
-        <li class="features__li features__li_all"><button>All tests</button> </li>
-        <li class="features__li features__li_body"><button>Full body check up</button></li>
-        <li class="features__li features__li_diabet"><button>Diabetes</button></li>
-        <li class="features__li features__li_heart"><button>Heart</button></li>
-        <li class="features__li features__li_cancer"><button>Cancer</button></li>
-        <li class="features__li features__li_vitamin"><button>Vitamin</button></li>
-        <li class="features__li features__li_women"><button>Women Health</button></li>
-        <li class="features__li features__li_skin"><button>Skin care</button></li>
-        <li class="features__li features__li_liver"><button>Liver</button></li>
-        <li class="features__li features__li_ptofile"><button>Thyroid Profile</button></li>
-        <li class="features__li features__li_function"><button>Kidney Function</button></li>
-    </ul>
-    <ul class="features__cards">
-      <li class="features__card">
-        <svg class="features__card-svg">
-          <use href="../image/home-image/features/features.svg#icon-Group-1"></use>
-        </svg>
-        <h3 class="features__card-title">
-          Women’s Staying Strong Health Checkup
-        </h3>
-        <p class="features__card-subtitle">Includes 32 Tests</p>
-        <div class="features__card-footer">
-          <p class="features__price">$430.00</p>
-          <button class="features__card-btn">Add</button>
-        </div>
       </li>
-
-      <li class="features__card">
-        <svg class="features__card-svg">
-          <use href="../image/home-image/features/features.svg#icon-Group-2"></use>
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Neurology"
+          ></use>
         </svg>
-        <h3 class="features__card-title">Medicare Diabetes Screening</h3>
-        <p class="features__card-subtitle">Includes 12 Tests</p>
-        <div class="features__card-footer">
-          <p class="features__price">$364.00</p>
-          <button class="features__card-btn">Add</button>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
         </div>
+        <h3 class="quality__card-title">Neurology</h3>
+        <p class="quality__card-text">Cardiology specializes in heart care, using advanced technology to diagnose, treat, and prevent heart conditions.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
+            <use
+              href="../image/services/quality/quality.svg#icon-Right-Up"
+            ></use>
+          </svg>
+        </a>
       </li>
-
-      <li class="features__card">
-        <svg class="features__card-svg">
-          <use href="../image/home-image/features/features.svg#icon-Group-3"></use>
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Eye"
+          ></use>
         </svg>
-        <h3 class="features__card-title">Medicare full body Health checkup</h3>
-        <p class="features__card-subtitle">Includes 18 Tests</p>
-        <div class="features__card-footer">
-          <p class="features__price">$364.00</p>
-          <button class="features__card-btn">Add</button>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
         </div>
+        <h3 class="quality__card-title">Eye care</h3>
+        <p class="quality__card-text">Get exceptional eye personalized care with personalized exams and advanced treatments personalized for clear, healthy vision.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
+            <use
+              href="../image/services/quality/quality.svg#icon-Right-Up"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Dentist"
+          ></use>
+        </svg>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
+        </div>
+        <h3 class="quality__card-title">Dentist</h3>
+        <p class="quality__card-text">A dentist focuses on oral health, offering everything personalized from cleanings to c, ensuring your smile stays healthy and bright.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
+            <use
+              href="../image/services/quality/quality.svg#icon-Right-Up"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="quality__card">
+        <div class="quality__card-images">
+        <svg class="quality__card-logo">
+          <use
+            href="../image/services/quality/quality.svg#icon-Orthopedics"
+          ></use>
+        </svg>
+        <img class="quality__graphics" src="../../image/services/quality/quality-graphics.svg" alt="">
+        </div>
+        <h3 class="quality__card-title">Orthopedics</h3>
+        <p class="quality__card-text">Orthopedics specializes in treating bone, joint, and muscle issues,  fractures, arthritis, and injuries to restore mobility and ease pain.</p>
+        <a class="quality__card-link" href="#">
+            Read more
+          <svg class="quality__link-svg">
+            <use
+              href="../image/services/quality/quality.svg#icon-Right-Up"
+            ></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </div>
 </section>
 
-  <section class="services">
-    <div class="services__container">
-        <div class="services__header">
-            <h2 class="services__title">Revolutionize with Cutting-Edge Healthcare Solutions</h2>
-            <p class="services__subtitle">Elevate your healthcare with our innovative solutions, delivering efficient, personalized care for today’s needs.</p>
-        </div>
-        <div class="services__content-cards">
-            <div class="services__card-image">
-                <p class="services__card-image-subtitle">Ready For Future</p>
-                <h3 class="services__card-image-title">Our expertise drives us to continuously innovate</h3>
-                <a class="services__card-image-link" href="#">Read case study</a>
-            </div>
-            <div class="services__card-electronic">
-                <p class="services__card-subtitle">Innovative Tools Transforming Healthcare Efficiency and Care.</p>
-                <div class="services__card-footer">
-                    <h3 class="services__card-footer-title">Electronic Health</h3>
-                    <a class="services__card-footer-link" href="#">
-                        <svg class="services__card-footer-svg">
-                        <use href="../image/home-image/services/services.svg#icon-Right-Up"></use>
-                        </svg>
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="services__card-telehealth">
-                <p class="services__card-subtitle">Streamlined Solutions for Virtual Consultations and Management.</p>
-                <div class="services__card-footer">
-                    <h3 class="services__card-footer-title">Telehealth Services</h3>
-                    <a class="services__card-footer-link" href="#">
-                    <svg class="services__card-footer-svg">
-                        <use href="../image/home-image/services/services.svg#icon-Right-Up"></use>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="services__card-billing">
-                <p class="services__card-billing-subtitle">Streamlined, precise, and secure solutions for managing healthcare payments and invoices. We optimize financial operations, minimize errors, and ensure timely payments for providers and patients alike.We optimize financial operations, minimize errors, and ensure timely payment</p>
-                <div class="services__card-footer">
-                    <h3 class="services__card-billing-footer-title">Billing and invoicing</h3>
-                    <a class="services__card-billing-footer-link" href="#">
-                        <svg class="services__card-billing-footer-svg">
-                        <use href="../image/home-image/services/services.svg#icon-Right-Up"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="answers">
+    <div class="answers__container">
+    <div class="answers__header">
+        <h2 class="answers__title">Find every answer you need right here.</h2>
+        <p class="answers__subtitle">Explore our comprehensive resources and FAQs to get all the information you need.</p>
     </div>
-</section>
-  <section class="designed-for">
-    <div class="designed-for__container">
-        <div class="designed-for__text-container">
-            <h2 class="designed-for__title">Designed for specialists leading healthcare excellence.</h2>
-            <p class="designed-for__text">Discover a platform designed for trailblazing specialists. Our resources
-                empower leaders in healthcare innovation and excellence.</p>
-        </div>
-        <div class="swiper designed-for__swiper-container">
-            <div class="designed-for__swiper-wrapper swiper-wrapper">
-
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_1 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_2 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_3 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_4 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_5 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-                <div class="designed-for__swiper-slide designed-for__swiper-slide_6 swiper-slide">
-                    <div class="swiper-slide">
-                        <p class="designed-for__name">Hassan Qureshi</p>
-                        <p class="designed-for__job">Cardiologist</p>
-                    </div>
-                </div>
-
-
-
-            </div> <button class="designed-for__swiper-button_prev designed-for__swiper-button">
-                <svg class="designed-for__svg designed-for__svg_prev">
-                    <use href="../../image/home-image/designed-for/designed-for.svg#icon-prev" />
+    <div class="answers__container-list">
+    <ul class="answers__list">
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">01. What services do you offer?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
                 </svg>
             </button>
-            <button class="designed-for__swiper-button_next designed-for__swiper-button">
-                <svg class="designed-for__svg">
-                    <use href="../../image/home-image/designed-for/designed-for.svg#icon-next" />
-                </svg>
-            </button>
-
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</section>
-  <section class="reviews">
-    <div class="reviews__container">
-        <h2 class="reviews__title">What Patients Are Saying About Dr. Hassan</h2>
-
-        <div class="reviews__img-container">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="../../image/home-image/reviews/man.png">
-                <img src="../../image/home-image/reviews/man375.png" alt="man">
-            </picture>
-        </div>
-        <div class="swiper reviews__swiper-container">
-            <div class="reviews__swiper-wrapper swiper-wrapper">
-                <div class="swiper-slide">
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-right" />
-                    </svg>
-                    <p class="reviews__text">Dr. Hassan is truly exceptional. His expertise, kindness, and genuine care
-                        for his patients are evident in every interaction. I always feel heard and well taken care of.
-                        Highly recommend!</p>
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-left" />
-                    </svg>
-                </div>
-                <div class="swiper-slide">
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-right" />
-                    </svg>
-                    <p class="reviews__text">Dr. Hassan is truly exceptional. His expertise, kindness, and genuine care
-                        for his patients are evident in every interaction. I always feel heard and well taken care of.
-                        Highly recommend!</p>
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-left" />
-                    </svg>
-                </div>
-                <div class="swiper-slide">
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-right" />
-                    </svg>
-                    <p class="reviews__text">Dr. Hassan is truly exceptional. His expertise, kindness, and genuine care
-                        for his patients are evident in every interaction. I always feel heard and well taken care of.
-                        Highly recommend!</p>
-                    <svg class="designed-for__svg designed-for__svg_prev">
-                        <use href="../../image/home-image/reviews/reviews.svg#icon-left" />
-                    </svg>
-                </div>
+            <div class="answers__content">
+                We provide a wide range of medical services, including primary care, specialty consultations, preventive health screenings, diagnostic testing, and telemedicine. Our goal is to offer comprehensive care tailored to your needs.
             </div>
-        </div> <button class="reviews__swiper-button_prev reviews__swiper-button">
-            <svg class="designed-for__svg designed-for__svg_prev">
-                <use href="../../image/home-image/designed-for/designed-for.svg#icon-prev" />
-            </svg>
-        </button>
-        <button class="reviews__swiper-button_next reviews__swiper-button">
-            <svg class="designed-for__svg">
-                <use href="../../image/home-image/designed-for/designed-for.svg#icon-next" />
-            </svg>
-        </button>
-    </div>
-    </div>
-</section>
-  <section class="pricing">
-    <div class="pricing__container">
-        <div class="pricing__header">
-            <h2 class="pricing__header-title">Choose your pricing plan</h2>
-            <p class="pricing__header-subtitle">Browse through our tailored pricing plans and choose the one that best fits your needs.</p>
-            <div class="pricing__toggle">
-                <p class="pricing__label">Monthly</p>
-            <label class="pricing__header-switch">
-            <input id="checkbox" type="checkbox" class="pricing__header-checkbox" />
-                <span class="pricing__header-slider"></span>
-            </label>
-                <p class="pricing__label">Yearly</p>
-            </div>
-        </div>
-        <ul class="pricing__cards">
-        <li class="pricing__card pricing__card-light">
-            <h3 class="pricing__card-light_titel">Basic Package</h3>
-            <p class="pricing__card-light_subtitle">Vital Tools for Streamlined Healthcare Management</p>
-            <p class="pricing__card-light_price"> $25<span>/month</span></p>
-            <ul class="pricing__card-light_list">
-                <li class="pricing__card-light_item">
-                    <svg class="pricing__card-light_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Essential Healthcare management
-                </li>
-                <li class="pricing__card-light_item">
-                    <svg class="pricing__card-light_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Simplicity and affordability
-                </li>
-                <li class="pricing__card-light_item">
-                    <svg class="pricing__card-light_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Comprehensive Healthcare Management
-                </li>
-                <li class="pricing__card-light_item">
-                    <svg class="pricing__card-light_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Comprehensive Healthcare Management
-                </li>
-            </ul>
-            <a href="#" class="pricing__card-light_link">Choose Your Plan</a>
         </li>
-        <li class="pricing__card pricing__card-dark">
-            <h3 class="pricing__card-dark_titel">Pro Package</h3>
-            <p class="pricing__card-dark_subtitel">Cutting-Edge Tools for Effortless Healthcare Management</p>
-            <p class="pricing__card-dark_price">$99<span>/month</span></p>
-            <ul class="pricing__card-dark_list">
-                <li class="pricing__card-dark_item">
-                    <svg class="pricing__card-dark_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Comprehensive Healthcare Management
-                </li>
-                <li class="pricing__card-dark_item">
-                    <svg class="pricing__card-dark_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Enhanced efficiency
-                </li>
-                <li class="pricing__card-dark_item">
-                    <svg class="pricing__card-dark_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Cost-effective solutions
-                </li>
-                <li class="pricing__card-dark_item">
-                    <svg class="pricing__card-dark_svg">
-                        <use href="../image/home-image/pricing/pricing.svg#icon-Filed"></use>
-                    </svg>
-                    Scalability and Customization
-                </li>
-            </ul>
-            <a href="#" class="pricing__card-dark_link">Choose Your Plan</a>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">02. How can I book an appointment?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                Many businesses have a website or app where you can select a date and time for your appointment. Look for a “Book Now” or “Schedule Appointment” button.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">03. Do you offer telehealth services?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                Yes, many healthcare providers offer telehealth services, which allow you to consult with a doctor, nurse, or specialist remotely via video calls, phone calls, or secure messaging.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">04. What is your cancellation policy?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                You can cancel or reschedule your appointment by phone, online, or through our patient portal. Please cancel at least 24–48 hours before your scheduled appointment to avoid a cancellation fee. Late cancellations or no-shows may incur a fee. Exceptions may be made for emergencies or unforeseen circumstances.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">05. What should I bring to my appointment?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                You should bring a valid ID, your insurance card (if applicable), a list of current medications, any relevant medical records or test results, a payment method, and a list of questions or concerns for your provider. Optional: a notebook or phone to take notes and a support person if needed.
+            </div>
         </li>
         </ul>
-    </div>
-</section>
-
-
-<!-- <label class="switch">
-  <input type="checkbox" />
-  <span class="switch__slider"></span>
-</label> -->
-
-  <section class="article">
-  <div class="article__container">
-    <div class="article__header">
-      <h2 class="article__title">Health Horizons & Insights</h2>
-      <p class="article__subtitle">
-        Explore the latest trends, expert advice, and in-depth analyses on a
-        wide range of health topics.
-      </p>
-    </div>
-
-    <ul class="article__cards">
-      <li class="article__card">
-        <img
-          class="article__card-img"
-          src="../../image/home-image/article/table.jpg"
-          alt="people"
-        />
-
-        <div class="article__card-control">
-          <svg class="article__card-svg">
-            <use
-              href="../image/home-image/article/article.svg#icon-hand-heart"
-            ></use>
-          </svg>
-          <p class="article__card-control-text">Healthcare services</p>
-        </div>
-
-        <h3 class="article__card-title">
-          Our Dedication to Enhancing Your Overall Wellness
-        </h3>
-
-        <p class="article__card-text">
-          We take immense pride in nurturing your vitality, dedicating ourselves
-          to supporting your health and well-being. Every step of your wellness
-          journey is our priority, and we're committed to helping you achieve
-          and maintain the vibrant life you deserve.
-        </p>
-
-        <p class="article__card-date">24 august 2024</p>
-      </li>
-
-      <li class="article__card">
-        <img
-          class="article__card-img"
-          src="../../image/home-image/article/child.jpg"
-          alt="people"
-        />
-
-        <div class="article__card-control">
-          <svg class="article__card-svg">
-            <use
-              href="../image/home-image/article/article.svg#icon-cross"
-            ></use>
-          </svg>
-          <p class="article__card-control-text">Eye care services</p>
-        </div>
-
-        <h3 class="article__card-title">
-          Holistic Eye Care: Optimal Solutions for Vision Health
-        </h3>
-
-        <p class="article__card-text">
-          We’re devoted to enhancing your vitality and supporting your
-          well-being. Your wellness journey is our top priority, and we’re here
-          to help you achieve and sustain a vibrant life.
-        </p>
-
-        <p class="article__card-date">24 august 2024</p>
-      </li>
-
-      <li class="article__card">
-        <img
-          class="article__card-img"
-          src="../../image/home-image/article/doctors.jpg"
-          alt="people"
-        />
-
-        <div class="article__card-control">
-          <svg class="article__card-svg">
-            <use
-              href="../image/home-image/article/article.svg#icon-hand-heart"
-            ></use>
-          </svg>
-          <p class="article__card-control-text">Healthcare Championing</p>
-        </div>
-
-        <h3 class="article__card-title">
-          Leading the Charge Toward a Healthier, More Vibrant You
-        </h3>
-
-        <p class="article__card-text">
-          We are deeply committed to enhancing your vitality and overall
-          well-being. Our focus is on supporting every aspect of your health
-          journey, ensuring that each step toward a vibrant life is our top
-          priority. We are here to help you achieve and sustain the energetic,
-          fulfilling life you truly deserve.
-        </p>
-
-        <p class="article__card-date">25 august 2024</p>
-      </li>
+        <ul class="answers__list">
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">06. How do I get my test results?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                You can get your test results by checking your **patient portal**, contacting the **clinic or provider’s office by phone**, or receiving them **via secure email or mail**, depending on the provider’s process.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">07. Can I refill my prescription online?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                Yes, many providers and pharmacies allow you to **request prescription refills online** through their **patient portal or app**. You can also contact your pharmacy’s website or app to request a refill directly.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">08. How do I contact my doctor after hours?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                For urgent matters after hours, you can contact our on-call physician through our main phone line. For non-urgent inquiries, please could you leave a message, and we will get back to you during regular business hours.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">09. What should I do if I have an emergency?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                If you have an emergency, **call your local emergency number immediately** (for example, 911 in the U.S.) or go to the **nearest emergency room**. Do not wait for a regular appointment or telehealth visit.
+            </div>
+        </li>
+        <li class="answers__item">
+            <button class="answers__item-header">
+                <p class="answers__header-text">10. How can I access my medical records online?</p>
+                <svg class="answers__header-svg-plus">
+                    <use href="../../image/services/answers/answers.svg#icon-Plus"></use>
+                </svg>
+                <svg class="answers__header-svg-minus">
+                    <use href="../../image/services/answers/answers.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <div class="answers__content">
+                You can access your medical records online via your provider’s patient portal. Log in to view, download, or print them.
+            </div>
+        </li>
     </ul>
-
-    <button class="article__btn">Show more</button>
-  </div>
+    </div>
+    </div>
 </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
