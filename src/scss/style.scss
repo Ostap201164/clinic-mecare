@@ -1,2 +1,9 @@
-@import "./header.scss";
-@import './reset.scss';
+@use "./reset.scss";
+@use "./comon.scss";
+@use "./header.scss";
+@use "./home/home.scss";
+@use "./blog/blog.scss";
+@use "./about-us/about-us.scss";
+@use "./contact-us/contact-us.scss";
+@use "./doctors/doctors.scss";
+@use "./footer.scss";
