@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @use "./universal/reset.scss";
 @use "./universal/font.scss";
 @use "./universal/header.scss";
@@ -7,3 +8,12 @@
 @use "./contact-us/contact-us.scss";
 @use "./doctors/doctors.scss";
 @use "./universal/footer.scss";
+=======
+@import "./header.scss";
+@import './reset.scss';
+@import "./doctors/doctors.scss";
+@import "./about-us/about-us.scss";
+@import "./footer.scss";
+@import "./appointment/appointment.scss";
+@import "./blog/blog.scss";
+>>>>>>> Stashed changes
