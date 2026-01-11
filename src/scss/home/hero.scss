@@ -1,7 +1,7 @@
 @use "../universal/colors.scss" as *;
 
 .hero {
-  padding: 20px 0 40px 0;
+  padding: 90px 0 40px 0;
 
   &__container {
     display: flex;
@@ -260,6 +260,7 @@
 
     @media (min-width: 1024px) {
       margin-bottom: 0;
+      width: 298px;
     }
     @media (min-width: 1280px) {
       width: 360px;
@@ -329,7 +330,7 @@
     }
 
     @media (min-width: 1024px) {
-      padding: 10px 31px;
+      padding: 13px 20px;
       border-radius: 24px;
     }
     @media (min-width: 1920px) {
