@@ -203,7 +203,8 @@
       font-weight: 500;
       line-height: 140%;
       text-align: center;
-      @media (min-width: 1024px) { font-size: 13px; transition: all 0.3s ease; &:hover { transform: scale(1.05); } }
+      transition: all 0.3s ease; &:hover { transform: scale(1.03); }
+      @media (min-width: 1024px) { font-size: 13px;  }
       @media (min-width: 1280px) { font-size: 16px; }
     }
   }
