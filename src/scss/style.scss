@@ -1,5 +1,5 @@
-@use "./reset.scss";
-@use "./comon.scss";
+@use "./universal/reset.scss";
+@use "./universal/font.scss";
 @use "./header.scss";
 @use "./home/home.scss";
 @use "./blog/blog.scss";
