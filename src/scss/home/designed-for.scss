@@ -226,6 +226,10 @@
     width: 20px;
     height: 20px;
   }
+
+  @media (min-width:1024px) {
+    margin-bottom: 120px;
+  }
 }
 
 .swiper-pagination-progressbar-fill {
