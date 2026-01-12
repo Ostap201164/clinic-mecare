@@ -12,7 +12,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html"),
+        index: resolve(__dirname, "src/index.html"),
+        aboutUs: resolve(__dirname, "src/about-us.html"),
+        blog: resolve(__dirname, "src/blog.html"),
+        doctors: resolve(__dirname, "src/doctors.html"),
+        services: resolve(__dirname, "src/services.html"),
+        pricing: resolve(__dirname, "src/pricing.html"),
       },
     },
     outDir: "../dist",
