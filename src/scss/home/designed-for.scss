@@ -1,3 +1,4 @@
+@use "../universal/colors.scss" as *;
 .designed-for {
   &__container {
     width: 327px;
@@ -23,12 +24,16 @@
   }
 
   &__text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     width: 305px;
     margin-bottom: 24px;
     color: var(--Neutrals-900, #0d1525);
@@ -38,6 +43,32 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.4;
+
+    span {
+      display: none;
+    }
+    @media (min-width: 1024px) {
+      span {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 4px;
+      }
+    }
+  }
+
+  &__avatars-item {
+    display: none;
+    @media (min-width: 1024px) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      background: #e2e4e9;
+      &:not(:first-child) {
+        margin-left: -12px;
+      }
+    }
   }
 
   &__swiper-wrapper {
@@ -227,7 +258,7 @@
     height: 20px;
   }
 
-  @media (min-width:1024px) {
+  @media (min-width: 1024px) {
     margin-bottom: 120px;
   }
 }
