@@ -24,7 +24,7 @@
   }
 
   &__text-container {
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
     text-align: center;
   }
 
@@ -43,7 +43,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.4;
-
+    margin-bottom: 24px;
     span {
       display: none;
     }
