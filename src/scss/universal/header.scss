@@ -120,6 +120,11 @@
 
     font-family: "Sequel Sans";
     font-weight: 315;
+    transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
   }
 
   &__link-get {
@@ -136,6 +141,11 @@
     font-family: Inter;
     font-weight: 500;
     line-height: 140%;
+    transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
   }
 
   &__btn-burger {
