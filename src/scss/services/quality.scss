@@ -1,0 +1,108 @@
+.quality {
+  padding: 40px 0;
+  @media (min-width: 1280px) { padding: 60px 0; }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+    margin: 0 auto;
+    @media (min-width: 1024px) { width: 928px; }
+    @media (min-width: 1280px) { width: 1096px; }
+    @media (min-width: 1440px) { width: 1208px; }
+    @media (min-width: 1920px) { width: 1228px; }
+  }
+
+  &__title {
+    margin: 0 auto 60px auto;
+    color: $neutral-1000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    @media (min-width: 1024px) { font-size: 48px; line-height: 120%; }
+    @media (min-width: 1920px) { font-size: 60px; font-weight: 700; }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    @media (min-width: 1024px) { flex-direction: row; flex-wrap: wrap; }
+    @media (min-width: 1280px) { gap: 20px; }
+    @media (min-width: 1440px) { gap: 40px; }
+    @media (min-width: 1920px) { gap: 50px; }
+  }
+
+  &__card {
+    width: 300px;
+    padding: 12px 15px;
+    background: $white;
+    border: 1px solid $neutral-200;
+    border-radius: 16px;
+    box-shadow: $shadow-quality;
+    @media (min-width: 1280px) { padding: 16px; }
+    @media (min-width: 1440px) { width: 376px; padding: 20px 28px; }
+  }
+
+  &__card-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-logo {
+    width: 71.32px;
+    height: 68.132px;
+    margin-bottom: 24px;
+    fill: $red-500;
+  }
+
+  &__card-title {
+    margin-bottom: 24px;
+    color: $neutral-900;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+
+  &__card-text {
+    width: 270px;
+    margin-bottom: 24px;
+    color: $neutral-800;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 13px 12px;
+    color: $neutral-900;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    background: $gradient-white-alpha;
+    border: 1px solid $red-100;
+    border-radius: 30px;
+    backdrop-filter: $blur-20;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__link-svg {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,195 @@
+@use "../universal/colors.scss" as *;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 2;
+
+  backdrop-filter: blur(50px);
+
+  @media (min-width: 1024px) {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 327px;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      width: 928px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 1120px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1280px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 1392px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    width: 104px;
+    height: 30px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      gap: 8px;
+      width: 140px;
+      height: 40px;
+    }
+  }
+
+  &__logo-svg {
+    width: 23px;
+    height: 23px;
+    padding: 3.75px;
+
+    border: 0.833px solid $white;
+    border-radius: 6.667px;
+    background: $primary-500;
+    box-shadow: $shadow-inset-light, $shadow-inset-soft;
+
+    @media (min-width: 1024px) {
+      width: 33px;
+      height: 33px;
+      padding: 5px;
+    }
+  }
+
+  &__logo-name {
+    color: $neutral-800;
+    text-align: center;
+
+    font-family: "Sequel Sans";
+    font-size: 18px;
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    button {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    @media (min-width: 1120px) {
+      gap: 30px;
+    }
+  }
+
+  &__link-join {
+    padding: 4px 8px;
+
+    color: $secondary-400;
+    text-align: center;
+
+    font-family: "Sequel Sans";
+    font-weight: 315;
+  }
+
+  &__link-get {
+    padding: 12px 20px;
+
+    border: 1px solid $bg-1;
+    border-radius: 30px;
+    background: $primary-500;
+    box-shadow: $shadow-button;
+
+    color: $white;
+    text-align: center;
+
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__btn-burger {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__burger-svg {
+    display: flex;
+
+    width: 23px;
+    height: 22px;
+    padding: 5px 3.332px 5px 3.334px;
+
+    border: 1px solid $bg-3;
+    border-radius: 6px;
+    background: $greyscale-0;
+    box-shadow: $shadow-burger;
+  }
+}
+
+.nav {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (min-width: 1120px) {
+    gap: 30px;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    color: $neutral-800;
+    text-align: center;
+
+    font-family: "Sequel Sans";
+
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}

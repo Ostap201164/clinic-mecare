@@ -1,0 +1,127 @@
+/* Primary */
+$primary-500: #5abeaf;
+$primary-100: #f0fbf9;
+
+/* Base */
+$white: #ffffff;
+
+/* Neutrals */
+$neutral-1000: #030527;
+$neutral-900: #0d1525;
+$neutral-800: #181b39;
+$neutral-700: #525b5a;
+$neutrals-200: #efefef;
+
+/* Borders */
+$border-light: #ebebeb;
+/* Primary (missing) */
+$primary-300: #cff1ec;
+
+/* Accent */
+$red-300: #fddbdb;
+$yellow-300: #fff6ca;
+
+/* Backgrounds */
+$bg-blue: #007ecd;
+$Red-300: #fddbdb;
+$Primary-300: #cff1ec;
+$Yellow-300: #fff6ca;
+
+/* Gradients */
+$gradient-start: #64d3c2;
+$gradient-end: #f0f4da;
+
+/* Borders */
+$border-light: #ebebeb;
+
+/* Accent */
+$red-300: #fddbdb;
+$yellow-300: #fff6ca;
+
+/* Yellow (missing) */
+$yellow-500: #ffe353;
+
+/* Secondary (missing) */
+$secondary-400: #1c404c;
+$secondary-100: #e8eced;
+
+/* Gradients */
+$gradient-white-soft: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.1) 0%,
+  rgba(255, 255, 255, 0.2) 100%
+);
+$blur-20: blur(20px);
+$overlay-dark: rgba(0, 0, 0, 0.45);
+
+$neutral-600: #7c8483;
+$neutral-200: #efefef;
+
+$border-white-blue: #f2f5f7;
+
+$primary-500: #7fc7b7;
+$primary-400: #64d3c2;
+$neutral-1000: #030527;
+$neutral-900: #0d1525;
+$neutral-800: #181b39;
+$neutral-700: #525b5a;
+$neutral-600: #7c8483;
+$neutral-200: #efefef;
+$border-white-blue: #f2f5f7;
+
+$primary-500: #7fc7b7;
+$primary-300: #cff1ec;
+$white: #ffffff;
+$neutral-1000: #030527;
+$neutral-900: #0d1525;
+$neutral-800: #181b39;
+$neutral-200: #efefef;
+$border-white-blue: #f2f5f7;
+
+$red-500: #df7e7e;
+$red-100: #fef4f4;
+
+$blur-20: blur(20px);
+$shadow-quality:
+  0 4px 24px 0 rgba(100, 211, 194, 0.08),
+  0 4px 14px 0 rgba(100, 211, 194, 0.04);
+$gradient-white-alpha: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.1) 0%,
+  rgba(255, 255, 255, 0.4) 100%
+);
+$shadow-btn:
+  0 2px 3px 0 rgba(0, 0, 0, 0.01),
+  0 2px 2px 0 rgba(135, 80, 255, 0.06);
+
+$neutral-700: #525b5a;
+$neutral-700-alt: #4a4f62;
+
+$shadow-answers:
+  0 4px 24px 0 rgba(100, 211, 194, 0.08),
+  0 4px 14px 0 rgba(100, 211, 194, 0.04);
+
+$gradient-content: linear-gradient(180deg, $white 0%, $primary-300 182.65%);
+
+$shadow-form: 0 5px 40px 0 rgba(0, 0, 0, 0.04);
+$shadow-input:
+  0 4px 24px 0 rgba(100, 211, 194, 0.08),
+  0 4px 14px 0 rgba(100, 211, 194, 0.04);
+$shadow-btn:
+  0 2px 3px 0 rgba(0, 0, 0, 0.01),
+  0 2px 2px 0 rgba(135, 80, 255, 0.06);
+
+  $white: #ffffff;
+$neutral-800: #181b39;
+$secondary-400: #1c404c;
+$primary-500: #5abeaf;
+$bg-1: #f2f5f7;
+$bg-3: #e3e3e9;
+$greyscale-0: #ffffff;
+
+// shadows
+$shadow-inset-light: 0 0.833px 3.333px 0 rgba(255, 255, 255, 0.35) inset;
+$shadow-inset-soft: 0.833px -3.333px 3.333px 0 rgba(255, 255, 255, 0.2) inset;
+$shadow-button: 0 2px 3px 0 rgba(0, 0, 0, 0.01),
+  0 2px 2px 0 rgba(135, 80, 255, 0.06);
+$shadow-burger: 0.8px 1.6px 3.2px 0 rgba(13, 13, 18, 0.08);

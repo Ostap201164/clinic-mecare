@@ -1,0 +1,680 @@
+.about-us__header {
+    padding: 84px 14px;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: center;
+}
+
+.about-us__header-container {
+
+    margin: 0 auto;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FFF 0%, #CFF1EC 182.65%);
+    display: flex;
+    padding: 24px 10px;
+    flex-direction: column;
+}
+
+.about-us__title {
+    font-family: "Inter", sans-serif;
+    color: #030527;
+    text-align: center;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.about-us__btn {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 30px;
+    border: 1px solid #F2F5F7;
+    background: #5ABEAF;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01), 0 2px 2px 0 rgba(135, 80, 255, 0.06);
+    margin-bottom: 14px;
+}
+
+.about-us__text {
+    color: #0D1525;
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.about-us__avatars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about-us__avatars-item {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    object-fit: cover;
+    margin-left: -19px;
+    background-color: #F2F5F7;
+}
+
+.about-us__avatars-item:first-child {
+    margin-left: 0;
+}
+
+.about-us__avatars-plus {
+    width: 48px;
+    height: 48px;
+    background-color: #5ABEAF;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    margin-left: -19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.about-us__img {
+    margin: auto;
+    width: 327px;
+    height: 238.531px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+#r {
+    margin: 0 auto;
+}
+
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 60px;
+
+}
+
+.achievements__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.achievements__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.achievements__item-title {
+    color: #0D1525;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.achievements__item-text {
+    color: #525B5A;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.achievemen__item-icon {
+    width: 60px;
+    height: 60px;
+    background: #5ABEAF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 15px;
+}
+
+.Who-we-are {
+    display: none;
+}
+
+.Who-we-are__container {
+    display: flex;
+    padding: 60px 48px;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.Who-we-are__title {
+    color: #0D1525;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    width: 432px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.Who-we-are__text {
+    color: #181B39;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 24px;
+
+}
+
+.Who-we-are__btn-text {
+    margin: 0;
+
+}
+
+.Who-we-are__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    width: 143px;
+    height: 48px;
+    padding: 13px 12px;
+    border-radius: 30px;
+    border: 1px solid #EFEFEF;
+    margin-bottom: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.Who-we-are__btn-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.Who-we-are__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.Who-we-are__wrapper-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 122px;
+}
+
+.Who-we-are__wrapper-item-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+    background: #5ABEAF;
+    box-shadow: -4px 4px 0 0 #CFF1EC;
+    padding: 10px;
+}
+
+.Who-we-are__wrapper-item-text {
+
+    color: #181B39;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container__img {
+    position: relative;
+}
+
+.container__img-item {
+    position: absolute;
+    width: 376px;
+    height: 364px;
+    border-radius: 38px;
+    border: 1px solid #CFF1EC;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#img {
+    position: relative;
+    z-index: 2;
+}
+
+.why-chose-us {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.why-chose-us__container {
+    margin: 0 auto;
+}
+
+.why-chose-us__header {}
+
+.why-chose-us__title {
+    color: #0D1525;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.why-chose-us__text {
+    color: #181B39;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.video {
+
+    margin: 0 auto 20px;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 28px;
+}
+
+.conteiner__card {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.card {
+    display: flex;
+    padding: 30px 26px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 12px;
+
+}
+
+#green {
+    background: #CFF1EC;
+}
+
+#red {
+    background: #FDDBDB;
+}
+
+#yellow {
+    background: #FFF6CA;
+}
+
+.card__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.card__icon-svg {}
+
+.card {
+    padding: 32px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__title {
+    color: #0D1525;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__text {
+    color: #181B39;
+    font-family: Inter;
+}
+
+
+.Benefits {
+     margin: 0 auto;
+}
+
+.Benefits__container {
+    display: flex;
+    padding: 60px 24px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.Benefits__title {
+    color: #0D1525;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.Benefits__text {
+    color: #181B39;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.Benefits__image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    display: block;
+}
+
+
+.Benefits__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 450px;
+}
+
+.Benefits__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.Benefits__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.Benefits__item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Benefits__item-title {
+    color: #181B39;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 120%;
+}
+
+.Benefits__item-text {
+    color: #525B5A;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+
+.Our-Specialists {
+    overflow: hidden;
+    display: none;
+    padding: 60px 0;
+    font-family: "Inter", sans-serif;
+
+}
+
+.Our-Specialists__container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Our-Specialists__title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Our-Specialists__title span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-us__avatars-item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-left: -15px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.about-us__avatars-item:first-child {
+    margin-left: 0;
+}
+
+
+.Our-Specialists__text {
+    color: #666;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+}
+
+.wrapper__photo {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.wrapper__photo img {
+    width: 300px;
+    height: 370px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    transition: 0.5s;
+}
+
+.wrapper__photo img:hover {
+    scale: 1.3;
+    z-index: 1;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.more::before,
+.more::after,
+.more-dot {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #CFF1EC;
+}
+
+
+.more::before {
+    width: 40px;
+    border-radius: 10px;
+    background: #5ABEAF;
+}
+
+
+.wrapper__btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.wrapper__btn button {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper__btn button:hover {
+    background: #64D3C2;
+}
+
+.wrapper__btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (min-width: 1024px) {
+
+    .container,
+    .about-us__header-container,
+    .why-chose-us__container,
+    .Benefits__container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .about-us__header {
+        max-width: 873px;
+    }
+
+    .about-us__title {
+        text-align: center;
+        max-width: 873px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .wrapper__img {
+        display: flex;
+        gap: 16px;
+        justify-content: center
+    }
+
+    .about-us__img {
+        margin: 0;
+    }
+
+    #r {
+        margin: 0;
+    }
+
+    .about-us__action-group {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+
+
+    }
+
+    .about-us__btn {
+        padding: 13px 20px 13px 20px;
+        width: 230px;
+    }
+
+    .about-us__avatars {}
+
+    .achievements__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Who-we-are {
+        display: block;
+    }
+
+    .why-chose-us {
+        max-width: 1024px;
+    }
+
+    .why-chose-us__title {
+        width: 736px;
+        font-size: 48px;
+    }
+
+    .why-chose-us__text {
+        width: 614px;
+    }
+
+    .video {
+        width: 928px;
+        height: 400px;
+
+        background-image: none;
+    }
+
+    .why-chose-us__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner__card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Benefits__container {
+        display: flex;
+        flex-direction: row;
+        gap: 42px;
+    }
+
+    .Benefits__title {
+        text-align: start;
+    }
+
+    .Benefits__text {
+        text-align: start;
+    }
+
+    .Benefits__header {
+        width: 510px;
+    }
+
+    .Benefits__image {
+        margin: 0;
+        width: 510px;
+        height: 257px;
+    }
+
+    .Our-Specialists {
+        display: block;
+    }
+}
